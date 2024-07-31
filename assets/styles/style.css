@@ -1,0 +1,125 @@
+.body{
+    width: 98vw;
+    height: 8255.88px; /* значение высоты взято из макета - будем менять в зависимости от кол-ва блоков */
+    
+    background-color: rgb(238, 238, 231);
+    }
+    
+    .grid-container_body{
+        display: grid;
+        grid-template: 2% 92% 6%/1fr;
+    
+        width: 100%;
+        height: 100%;
+    }
+    
+    .grid-item_body-header{
+        grid-area: 1/1/2/2;
+    
+        border: solid rgb(191, 201, 255)
+    }
+    
+    .grid-item_body-main{
+        grid-area: 2/1/3/2;
+    }
+    
+    .grid-item_body-footer{
+        grid-area: 3/1/4/2;
+    
+        border: solid orange;
+    }
+    
+    .grid-container_main{
+        display: grid;
+        grid-template: 9% 30% 20% 27% 2% 10% 2%/5% 1fr 5%;
+    
+        width: 100%;
+        height: 100%;
+    }
+    
+    .grid-item_main-block1{
+        grid-area: 1/1/2/4;
+    
+        border: solid blue;
+    }
+    
+    .grid-item_main-block2{
+        grid-area: 2/1/3/4;
+    
+        border: solid yellow;
+    }
+    
+    .grid-item_main-block3{
+        grid-area: 3/1/4/4;
+    
+        border: solid red;
+    }
+    
+    .grid-item_main-block4{
+        grid-area: 4/1/5/4;
+    
+        border: solid green;
+    }
+    
+    .grid-item_main-block5{
+        grid-area: 6/2/7/3;
+    
+        border: solid orange;
+    }
+    
+    .grid-container_main-block2_Home{
+        display: grid;
+        grid-template: 26% 5% 26% 5% 26% 1fr/5% 1fr 5%;
+    
+        width: 100%;
+        height: 100%;
+    
+        background-color: white;
+    }
+    
+    .grid-item_main-block2-How-it-works{
+        grid-area: 1/2/2/3;
+    
+        border: solid black;
+    }
+    
+    .grid-item_main-block2-The-best{
+        grid-area: 3/2/4/3;
+    
+        border: solid black;
+    }
+    
+    .grid-item_main-block2-Fast-forward-process{
+        grid-area: 5/2/6/3;
+    
+        border: solid black;
+    }
+    
+    .grid-container_main-block4_information-and-reviews{
+        display: grid;
+        grid-template: 30% 6% 13% 13% 38%/4.5% 1fr 4.5%;
+    
+        width: 100%;
+        height: 100%;
+    }
+    
+    .grid-item_main-block4-Locations{
+        grid-area: 1/2/2/3;
+    
+        border: solid black;
+    }
+    
+    .grid-item_main-block4-Families{
+        grid-area: 3/2/5/3;
+        z-index: 1;
+    
+        border: solid black;
+        background-color: #65665C;
+    }
+    
+    .grid-item_main-block4-What{
+        grid-area: 4/1/6/4;
+    
+        border: solid black;
+        background-color: white;
+    }
