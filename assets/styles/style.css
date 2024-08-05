@@ -289,56 +289,117 @@
       background-color: transparent;
       border: 0px solid transparent;
     }
-  }
+}
 
-.grid-container_main-block3_Houses{ /* основной контейнер 3-его блока main */
+.grid-container_main-block3_Houses{ /* основной контейнер 3-его блока main  */
     display: grid;
-    grid-template: 7% 8% 1fr 1fr 4% 3% 7%/6% 3% 21% 5.5% 29% 5.5% 21% 3% 6%;
+    grid-template: 9% 8% 5% 1fr 2% 1fr 4% 3% 9%/6% 3% 21% 4% 2% 28% 2% 4% 21% 3% 6%;
 
     width: 100%;
     height: 100%;
 
-    background-color: #F5F5F2;
-
     .grid-item_main-block3-stairs_right{
-        grid-area: 1/8/2/10;
+        grid-area: 1/10/2/12;
     }
 
     .grid-item_main-block3-properties{
-        grid-area: 2/4/3/7;
+        grid-area: 2/4/3/9;
+
+        .flex-container_main-block3_properties{
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .link_properties{
+                background-color: #d1d2cb;
+                border: solid #d1d2cb;
+                border-radius: 2rem;
+                padding: 0.4rem 0.8rem;
+                text-decoration: none;
+                color: #2A2C1F;
+            }
+            
+            .text-title{
+                font-size: 2.8rem;
+                font-weight: 700;
+                line-height: 4rem;
+                color: #2A2C1F;
+            }
+        }
     }
 
     .grid-item_main-block3-card1{
-        grid-area: 3/2/4/5;
-    }
-
-    .grid-item_main-block3-card2{
-        grid-area: 3/5/4/6;
-    }
-
-    .grid-item_main-block3-card3{
-        grid-area: 3/6/4/9;
-    }
-
-    .grid-item_main-block3-card4{
         grid-area: 4/2/5/5;
     }
 
+    .grid-item_main-block3-card2{
+        grid-area: 4/6/5/7;
+    }
+
+    .grid-item_main-block3-card3{
+        grid-area: 4/8/5/11;
+    }
+
+    .grid-item_main-block3-card4{
+        grid-area: 6/2/7/5;
+    }
+
     .grid-item_main-block3-card5{
-        grid-area: 4/5/5/6;
+        grid-area: 6/6/7/7;
     }
 
     .grid-item_main-block3-card6{
-        grid-area: 4/6/5/9;
+        grid-area: 6/8/7/11;
     }
 
     .grid-item_main-block3-explore_properties{
-        grid-area: 6/5/7/6;
+        grid-area: 8/5/9/8;
     }
 
     .grid-item_main-block3-stairs_left{
-        grid-area: 7/1/8/3;
+        grid-area: 9/1/10/3;
     }
+}
+
+.grid-container_main-block4_information-and-reviews{ /* основной контейнер 4-ого блока main - блоки Sim Ona и Helga */
+    display: grid;
+    grid-template: 30% 6% 13% 13% 38%/4.5% 1fr 4.5%;
+
+    width: 100%;
+    height: 100%;
+
+
+    .grid-item_main-block4-Locations{
+        grid-area: 1/2/2/3;
+
+        border: solid black;
+    }
+
+    .grid-item_main-block4-Families{
+        grid-area: 3/2/5/3;
+        z-index: 1;
+
+        border: solid black;
+        background-color: #65665C;
+    }
+
+    .grid-item_main-block4-What{
+        grid-area: 4/1/6/4;
+
+        border: solid black;
+        background-color: white;
+    }
+}
+
+.text-title{   /*Этот блок мой - и ещё не добавлен*/
+    font-family: Roboto;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 57px;
+    text-align: center;
+    color: #2A2C1F;
 }
 
 .grid-container_main-block4_information-and-reviews{ /* основной контейнер 4-ого блока main - блоки Sim Ona и Helga */
