@@ -3,6 +3,8 @@
     height: 8255.88px; /* значение высоты взято из макета - будем менять в зависимости от кол-ва блоков */
     
     background-color: rgb(238, 238, 231);
+
+    font-family: 'Roboto', sans-serif;
 }
     
 .grid-container_body{ /* основной контейнер в body - он делит всю страницу семантически */
@@ -70,7 +72,8 @@
     }
 }
 
-.grid-container_main-block2_Home{ /* основной контейнер 2-ого блока main - блоки Маши  */
+.grid-container_main-block2_Home {
+    /* основной контейнер 2-ого блока main - блоки Маши  */
     display: grid;
     grid-template: 26% 5% 26% 5% 26% 1fr/5% 1fr 5%;
 
@@ -78,25 +81,215 @@
     height: 100%;
 
     background-color: white;
-    
-    .grid-item_main-block2-How-it-works{
-        grid-area: 1/2/2/3;
-    
-        border: solid black;
+
+    .grid-item_main-block2-How-it-works {
+      grid-area: 1/2/2/3;
     }
-    
-    .grid-item_main-block2-The-best{
-        grid-area: 3/2/4/3;
-    
-        border: solid black;
+
+    .grid-item_main-block2-How-it-works-logoipsum {
+      display: flex;
+      justify-content: space-between;
     }
-    
-    .grid-item_main-block2-Fast-forward-process{
-        grid-area: 5/2/6/3;
-    
-        border: solid black;
+  
+    .grid-item_main-block2-How-it-works-logoipsum-text {
+      font-size: 1.125rem;
+      color: #2a2c1f;
     }
-}
+  
+    .grid-item_main-block2-How-it-works-text {
+      text-align: center;
+    }
+  
+    .grid-item_main-block2-How-it-works-title {
+      font-size: 3rem;
+      font-weight: bold;
+      color: #2a2c1f;
+  
+      padding-top: 13vh;
+    }
+  
+    .grid-item_main-block2-How-it-works-desc {
+      font-size: 1.125rem;
+      color: #65665c;
+  
+      padding-top: 1vh;
+    }
+  
+    .grid-item_main-block2-How-it-works-wrap {
+      display: flex;
+      justify-content: space-around;
+      padding-top: 6vh;
+    }
+  
+    .grid-item_main-block2-How-it-works-section {
+      width: 25vw;
+      height: 291px;
+      border: 1px solid #e7e8e3;
+      border-radius: 5%;
+  
+      font-size: 1rem;
+  
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .grid-item_main-block2-How-it-works-section-text {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+  
+    .grid-item_main-block2-How-it-works-section-text2 {
+      padding-left: 2vw;
+      padding-right: 2vw;
+      text-align: center;
+    }
+  
+    .grid-item_main-block2-The-best {
+      grid-area: 3/2/4/3;
+  
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .grid-item_main-block2-The-best-section {
+      padding-top: 20vh;
+    }
+  
+    .grid-item_main-block2-The-best-subtitle {
+      background-color: #e7e8e3;
+      border: 0px solid transparent;
+      border-radius: 25px;
+  
+      width: 107px;
+      height: 29px;
+  
+      color: #2a2c1f;
+      font-size: 1rem;
+      text-align: center;
+      padding-top: 9px;
+    }
+  
+    .grid-item_main-block2-The-best-title {
+      color: #2a2c1f;
+      font-size: 3rem;
+      font-weight: bold;
+      padding-top: 3vh;
+    }
+  
+    .grid-item_main-block2-The-best-desc {
+      color: #65665c;
+      font-size: 1.125rem;
+      padding-top: 5vh;
+    }
+  
+    .grid-item_main-block2-The-best-form {
+      display: inline-block;
+      padding-right: 1vw;
+      padding-top: 3vh;
+    }
+  
+    .grid-item_main-block2-The-best-button-active {
+      width: 192px;
+      height: 50px;
+  
+      background-color: transparent;
+      border: 1.5px solid #e7e8e3;
+      border-radius: 10px;
+      box-shadow: 3px 3px 3px #e7e8e3;
+    }
+  
+    .grid-item_main-block2-The-best-button {
+      width: 130px;
+      height: 40px;
+  
+      background-color: transparent;
+      border: 0px solid transparent;
+    }
+  
+    .grid-item_main-block2-Fast-forward-process {
+      grid-area: 5/2/6/3;
+  
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .grid-item_main-block2-Fast-forward-process-section {
+      padding-left: 7vw;
+      padding-top: 7vh;
+    }
+  
+    .grid-item_main-block2-Fast-forward-process-subtitle {
+      background-color: #e7e8e3;
+      border: 0px solid transparent;
+      border-radius: 25px;
+  
+      width: 127px;
+      height: 29px;
+  
+      color: #2a2c1f;
+      font-size: 1rem;
+      text-align: center;
+    }
+  
+    .grid-item_main-block2-Fast-forward-process-title {
+      color: #2a2c1f;
+      font-size: 3rem;
+      font-weight: bold;
+      padding-top: 3vh;
+    }
+  
+    .grid-item_main-block2-Fast-forward-process-desc {
+      color: #65665c;
+      font-size: 1.125rem;
+      padding-top: 5vh;
+    }
+  
+    .grid-item_main-block2-Fast-forward-process-box-wrap {
+      display: flex;
+      padding-top: 5vh;
+    }
+  
+    .grid-item_main-block2-Fast-forward-process-box {
+      width: 288px;
+    }
+  
+    .grid-item_main-block2-Fast-forward-process-text {
+      color: #2a2c1f;
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+  
+    .grid-item_main-block2-Fast-forward-process-text2 {
+      color: #65665c;
+      font-size: 1rem;
+    }
+  
+    .grid-item_main-block2-Fast-forward-process-form {
+      display: inline-block;
+      padding-right: 1vw;
+      padding-top: 3vh;
+    }
+  
+    .grid-item_main-block2-Fast-forward-process-button-active {
+      width: 192px;
+      height: 50px;
+  
+      background-color: transparent;
+      border: 1.5px solid #e7e8e3;
+      border-radius: 10px;
+      box-shadow: 3px 3px 3px #e7e8e3;
+    }
+  
+    .grid-item_main-block2-Fast-forward-process-button {
+      width: 130px;
+      height: 40px;
+  
+      background-color: transparent;
+      border: 0px solid transparent;
+    }
+  }
 
 .grid-container_main-block3_Houses{ /* основной контейнер 3-его блока main */
     display: grid;
@@ -260,5 +453,5 @@ header {
     padding: 5px 10px;
     border-radius: 6px;
 }
-
+/*
 <!--стили для хедера закончились-- >
