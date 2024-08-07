@@ -387,6 +387,71 @@
         grid-area: 1/2/2/3;
 
         border: solid black;
+
+            .flex-container_main-block4-Locations {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            h2 {
+                margin-bottom: 1.6rem;
+            }
+
+            .grid-item_main-block4-Locations_text {
+                text-align: center;
+                margin-bottom: 4.6rem;
+            }
+            
+            .grid-item_main-block4-Locations-card {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 1rem;
+                justify-content: center;
+                margin-bottom: 4rem;
+    
+                width: 100%;
+                max-width: 1450px;
+                
+                div {
+                    width: 400px;
+                    height: 130px;
+                    border: 1px solid rgb(231, 232, 227);
+                    border-radius: 16px;
+                    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+                    background: rgb(255, 255, 255);
+                    padding-left: 2.06rem;
+            
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+    
+                div:hover {
+                    background: rgba(231, 232, 227, 1.00);
+                }
+            
+                .grid-item_main-block4-Locations-card_tittle {
+                    color: #2a2c1f;
+                    font-size: 1.25rem;
+                    font-weight: bold;
+                }
+            
+                .grid-item_main-block4-Fast-Locations-form {
+                    display: inline-block;
+                }
+            
+                .grid-item_main-block4-Fast-Locations-form-button {
+                    width: 141px;
+                    height: 24px;
+            
+                    background-color: transparent;
+                    border: 0px solid transparent;
+                    padding-left: 0;
+            
+                    color: #65665c;
+                    font-size: 1rem;}
+            }
     }
 
     .grid-item_main-block4-Families {
