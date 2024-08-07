@@ -463,7 +463,9 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-top: 7vh;
+            margin-top: 96px;
+            /*margin-top: 7.5vh;*/
+            justify-content: center;
         }
 
         .grid-item_main-block4-Families-img {
@@ -491,8 +493,13 @@
             background-color: #cf6f49;
             color: white;
             border: 1px solid #cf6f49;
-            /*padding: 5px 10px;*/
             border-radius: 6px;
+        }
+
+        #families_button:hover {
+            background-color: #65665c;
+            border: 2px solid #cf6f49;
+            color: #cf6f49;
         }
     }
 
