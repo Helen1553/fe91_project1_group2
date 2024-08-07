@@ -398,46 +398,6 @@
     }
 }
 
-.text-title {
-    /*Этот блок мой - и ещё не добавлен*/
-    font-family: Roboto;
-    font-size: 45px;
-    font-weight: 700;
-    line-height: 57px;
-    text-align: center;
-    color: #2a2c1f;
-}
-
-.grid-container_main-block4_information-and-reviews {
-    /* основной контейнер 4-ого блока main - блоки Sim Ona и Helga */
-    display: grid;
-    grid-template: 30% 6% 13% 13% 38%/4.5% 1fr 4.5%;
-
-    width: 100%;
-    height: 100%;
-
-    .grid-item_main-block4-Locations {
-        grid-area: 1/2/2/3;
-
-        border: solid black;
-    }
-
-    .grid-item_main-block4-Families {
-        grid-area: 3/2/5/3;
-        z-index: 1;
-
-        border: solid black;
-        background-color: #65665c;
-    }
-
-    .grid-item_main-block4-What {
-        grid-area: 4/1/6/4;
-
-        border: solid black;
-        background-color: white;
-    }
-}
-
 .grid-item_body-header {
     grid-area: 1/1/2/2;
     align-items: center;
