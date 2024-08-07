@@ -386,8 +386,6 @@
     .grid-item_main-block4-Locations {
         grid-area: 1/2/2/3;
 
-        border: solid black;
-
             .flex-container_main-block4-Locations {
                 display: flex;
                 flex-direction: column;
@@ -458,8 +456,44 @@
         grid-area: 3/2/5/3;
         z-index: 1;
 
-        border: solid black;
+        border-radius: 24px;
         background-color: #65665c;
+
+        .flex-container_main-block4-Families {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 7vh;
+        }
+
+        .grid-item_main-block4-Families-img {
+            width: 48px;
+            height: 48px;
+        }
+
+        #text-title-families{
+            font-size: 3rem;
+            color: rgb(255, 255, 255);
+            padding-top: 0.8rem;
+            padding-bottom: 1.9rem;
+        }
+
+        .grid-item_main-block4-families_text {
+            text-align: center;
+            font-size: 1.2rem;
+            color: rgb(231, 232, 227);
+            padding-bottom: 1.3rem;
+        }
+
+        #families_button {
+            width: 137px;
+            height: 50px;
+            background-color: #cf6f49;
+            color: white;
+            border: 1px solid #cf6f49;
+            /*padding: 5px 10px;*/
+            border-radius: 6px;
+        }
     }
 
     .grid-item_main-block4-What {
