@@ -14,13 +14,12 @@
     width: 100%;
     height: 100%;
 
+    /* этот элемент - не сам хедер, а контейнер для позиционирования хедера (и sup-header) - хедер делаем внутри этого контейнера - т.е. его не комментим, а элемент с таким же классом в хедере называем по-другому, оставляя при этом его свойства  */
     /* .grid-item_body-header {
         grid-area: 1/1/2/2;
-        align-items: center;
-        padding: 16px;
         background-color: #e7e8e3;
-        gap: 12px;
-        border: solid rgb(191, 201, 255);
+        
+        border: solid rgb(252, 0, 0);
     } */
 
     .grid-item_body-main {
@@ -32,6 +31,93 @@
 
         border: solid orange; /* бордеры - для наглядности, пока верстаем */
     }
+}
+
+.grid-item_body-header {
+    /* grid-area: 1/1/2/2; */
+    display: grid;
+    grid-template: 50% 50% / 20% 50% 30%;
+    /* padding: 16px;
+    gap: 12px; */
+    align-items: center;
+    background-color: #e7e8e3;
+    border: solid rgb(191, 201, 255);
+
+    .sup-header {
+        grid-area: 1/1/2/4;
+        background-color: #939878;
+        text-align: center;
+        padding: 4px 40px;
+    }
+
+    /*лучше не мещать гриды и флексы в одном классе - выход такой: допустим у logo остаётся grid-area; тогда внутри logo создаём див с классом flex-container-logo, например --> и уже в него вкладываем теги img и h3 --> и уже к этим элементам применям флексы */
+    .logo {
+        display: flex;
+        align-items: center;
+        width: 32px;
+        height: 32px;
+        text-indent: 36px;
+        background-color: #cf6f49;
+        border-radius: 12px;
+        margin-left: 30px;
+        grid-area: 2/1/3/2;
+    }
+
+/* гриды и флексы..+ перевод абсолютных величин в относительные + величина height не влияет на высоту блока навигации (её можно спокойно убрать), gap и align items -тоже*/
+    .nav-menu {
+        height: 42px;
+        grid-area: 2/2/3/3;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 8px;
+    }
+
+/* все, кроме list-none - для позиционирования? */
+        .nav-menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 9px 16px;
+            display: flex;
+            gap: 32px;
+            align-items: center;
+        }
+
+/* прикольный вариант изменения цвета ссылки (значение inherit - значит блок наследует цвет от родительского блока)*/
+.nav-menu a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 16px;
+    font-weight: 400;
+}
+/* относительные единицы + гриды и флексы */
+.buttons {
+    grid-area: 2/3/3/4;
+    display: flex;
+    border: none;
+    gap: 16px;
+    justify-content: flex-start;
+    padding: 9px 21px;
+    border-radius: 6px;
+    cursor: pointer;
+
+    .buttons .cart {
+        padding: 5px 10px;
+        border-radius: 6px;
+        background-color: transparent;
+        border: 1px solid #e7e8e3;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+    }
+
+    .find-property {
+        background-color: #cf6f49;
+        color: white;
+        border: 1px solid #cf6f49;
+        padding: 5px 10px;
+        border-radius: 6px;
+    }
+}
+
 }
 
 .grid-container_main {
@@ -70,6 +156,65 @@
         grid-area: 6/2/7/3;
 
         border: solid orange;
+    }
+}
+
+.main-block1_Find-house {
+    display: grid;
+    grid-template: 21% 1fr 21% / 6% 3% 32% 3% 6% 50%;
+    width: 100%;
+
+    .grid-item-block1-stars-up {
+        grid-area: 1/1/2/3;
+    }
+
+    .main-block1-Find-house-part1 {
+        grid-area: 2/2/3/5;
+
+        .btn-dream-place {
+            background-color: #e7e8e3;
+            border: 0px solid transparent;
+            border-radius: 25px;
+            margin-left: 50px;
+        
+            width: 50%;
+            height: 29px;
+        
+            color: #2a2c1f;
+            font-size: 1rem;
+            text-align: center;
+        }
+    }
+
+    .search-form {
+        position: relative;
+        display: inline-block;
+    }
+
+    .find-property {
+        background-color: #cf6f49;
+        color: white;
+        border: 1px solid #cf6f49;
+        padding: 5px 10px;
+        border-radius: 6px;
+    }
+
+    .search-f {
+        padding-left: 24px;
+    }
+
+    .main-block1-Find-house-part1 h1,
+    .main-block1-Find-house-part1 p,
+    .main-block1-Find-house-part1 .search-form {
+        margin-left: 50px;
+    }
+
+    .grid-item-block1-stars-down {
+        grid-area: 3/4/4/6;
+    }
+
+    .grid-item_main-block1-img {
+        grid-area: 1/6/4/7;
     }
 }
 
@@ -566,138 +711,6 @@
     line-height: 1.6875rem;
     color: #65665c;
     text-align: center;
-}
-
-.grid-item_body-header {
-    /* grid-area: 1/1/2/2; */
-    display: grid;
-    grid-template: 50% 50% / 20% 50% 30%;
-    /* padding: 16px;
-    gap: 12px; */
-    align-items: center;
-    background-color: #e7e8e3;
-    border: solid rgb(191, 201, 255);
-}
-
-.sup-header {
-    grid-area: 1/1/2/4;
-    background-color: #939878;
-    text-align: center;
-    padding: 4px 40px;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    width: 32px;
-    height: 32px;
-    text-indent: 36px;
-    background-color: #cf6f49;
-    border-radius: 12px;
-    margin-left: 30px;
-    grid-area: 2/1/3/2;
-}
-
-.nav-menu {
-    height: 42px;
-    grid-area: 2/2/3/3;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 8px;
-}
-
-.nav-menu ul {
-    list-style: none;
-    margin: 0;
-    padding: 9px 16px;
-    display: flex;
-    gap: 32px;
-    align-items: center;
-}
-
-.nav-menu a {
-    text-decoration: none;
-    color: inherit;
-    font-size: 16px;
-    font-weight: 400;
-}
-
-.buttons {
-    grid-area: 2/3/3/4;
-    display: flex;
-    border: none;
-    gap: 16px;
-    justify-content: flex-start;
-    padding: 9px 21px;
-    border-radius: 6px;
-    cursor: pointer;
-}
-.buttons .cart {
-    padding: 5px 10px;
-    border-radius: 6px;
-    background-color: transparent;
-    border: 1px solid #e7e8e3;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
-}
-
-.find-property {
-    background-color: #cf6f49;
-    color: white;
-    border: 1px solid #cf6f49;
-    padding: 5px 10px;
-    border-radius: 6px;
-}
-
-.main-block1_Find-house {
-    display: grid;
-    grid-template: 21% 1fr 21% / 6% 3% 32% 3% 6% 50%;
-    width: 100%;
-}
-
-.grid-item-block1-stars-up {
-    grid-area: 1/1/2/3;
-}
-
-.main-block1-Find-house-part1 {
-    grid-area: 2/2/3/5;
-}
-
-.grid-item-block1-stars-down {
-    grid-area: 3/4/4/6;
-}
-
-.search-form {
-    position: relative;
-    display: inline-block;
-}
-
-.search-f {
-    padding-left: 24px;
-}
-
-.btn-dream-place {
-    background-color: #e7e8e3;
-    border: 0px solid transparent;
-    border-radius: 25px;
-    margin-left: 50px;
-
-    width: 50%;
-    height: 29px;
-
-    color: #2a2c1f;
-    font-size: 1rem;
-    text-align: center;
-}
-
-.main-block1-Find-house-part1 h1,
-.main-block1-Find-house-part1 p,
-.main-block1-Find-house-part1 .search-form {
-    margin-left: 50px;
-}
-
-.grid-item_main-block1-img {
-    grid-area: 1/6/4/7;
 }
 
 /* футер */
