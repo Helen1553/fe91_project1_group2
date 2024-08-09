@@ -1038,12 +1038,20 @@
               .grid-item_main-block4-Locations-card {
                 margin-bottom: 2rem;
 
-                border: 1px solid red;
-
                 div {
                   width: 45%;
                 }
               }
+
+              .grid-item_main-block4-Locations-card_tittle {
+                font-size: 1.5rem;
+              }
+
+              .grid-item_main-block4-Fast-Locations-form-button {
+                width: 160px;
+                font-size: 1.2rem;
+            }
+
             }
 
             .grid-item_main-block4-Families {
