@@ -550,15 +550,14 @@
         .grid-item_main-block4-Locations-card {
             display: flex;
             flex-wrap: wrap;
-            gap: 1rem;
+            gap: 0.7rem;
             justify-content: center;
             margin-bottom: 4rem;
 
             width: 100%;
-            max-width: 1450px;
 
             div {
-                width: 400px;
+                width: 31%;
                 height: 130px;
                 border: 1px solid rgb(231, 232, 227);
                 border-radius: 16px;
@@ -872,7 +871,7 @@
 
 /* Примерные медиазапросы для адаптации структуры страницы (для tablet - планшета и mobile - мобилки)! Далее внутри каждого своего блока прописывайте нужную адаптацию. Подробнее об адаптации поговорим на созвоне  */
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and /*(min-width: 900px)*/(min-width: 768px) and (max-width: 1023px) {
     .body{
         max-height: 5902px;
 
@@ -901,6 +900,21 @@
                     
                         .grid-item_main-block4-Locations {
                             grid-area: 1/2/2/3;
+
+                            .grid-item_main-block4-Locations_text {
+                                margin-bottom: 2.6rem;
+                            }
+
+                            .grid-item_main-block4-Locations-card {
+                                margin-bottom: 2rem;
+
+                                border: 1px solid red;
+
+                                    div {
+                                        width: 45%;
+                                    }
+                                
+                            }
                         }
 
                         .grid-item_main-block4-Families {
@@ -920,6 +934,7 @@
         }
     }
 }
+
 
 @media screen and (max-width: 767px) {
     .body{
