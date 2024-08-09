@@ -863,3 +863,104 @@
         }
     }
 }
+
+/* Примерные медиазапросы для адаптации структуры страницы (для tablet - планшета и mobile - мобилки)! Далее внутри каждого своего блока прописывайте нужную адаптацию. Подробнее об адаптации поговорим на созвоне  */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .body{
+        max-height: 5902px;
+
+        .grid-container_body{
+
+            .grid-container_main{
+                grid-template: 13% 43% 30% 14%/1fr;
+
+                .grid-item_main-block1 {
+                    grid-area: 1/1/2/2;
+                }
+
+                .grid-item_main-block2 {
+                    grid-area: 2/1/3/2;
+                }
+
+                .grid-item_main-block3 {
+                    grid-area: 3/1/4/2;
+                }
+
+                .grid-item_main-block4 {
+                    grid-area: 4/1/5/2;
+
+                    .grid-container_main-block4_information-and-reviews {
+                        grid-template: 1fr/5% 1fr 5%;
+                    
+                        .grid-item_main-block4-Locations {
+                            grid-area: 1/2/2/3;
+                        }
+
+                        .grid-item_main-block4-Families {
+                            display: none;
+                        }
+
+                        .grid-item_main-block4-What {
+                            display: none;
+                        }
+                    }
+                }
+            
+                .grid-item_main-block5 {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .body{
+        max-height: 4475px;
+
+        .grid-container_body{
+            grid-template: 25% 65% 10%/1fr;
+
+            .grid-container_main{
+                grid-template: 75% 25%/ 1fr;
+
+                .grid-item_main-block1{
+                    display: none;
+                }
+
+                .grid-item_main-block2 {
+                    grid-area: 1/1/2/2;
+                }
+
+                .grid-item_main-block3 {
+                    grid-area: 2/1/3/2;
+                }
+
+                .grid-item_main-block4 {
+                    display: none;
+
+                    .grid-container_main-block4_information-and-reviews {
+                        grid-template: 1fr/5% 1fr 5%;
+                    
+                        .grid-item_main-block4-Locations {
+                            grid-area: 1/2/2/3;
+                        }
+
+                        .grid-item_main-block4-Families {
+                            display: none;
+                        }
+
+                        .grid-item_main-block4-What {
+                            display: none;
+                        }
+                    }
+                }
+            
+                .grid-item_main-block5 {
+                    display: none;
+                }
+            }
+        }
+    }
+}
