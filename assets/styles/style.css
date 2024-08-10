@@ -748,11 +748,12 @@
   .main-block5_Latest-posts-desc-wrap {
     display: flex;
     justify-content: space-between;
-    padding-top: 1vw;
+    padding-top: 1vh;
   }
 
   .main-block5_Latest-posts-desc {
     width: 60vw;
+    font-size: 1.5vw;
   }
 
   .main-block5_Latest-posts-form {
@@ -776,12 +777,12 @@
     display: flex;
     justify-content: space-between;
 
-    padding-top: 5vw;
+    padding-top: 5vh;
   }
 
   .main-block5_Latest-posts-section {
     width: 27.3vw;
-    height: 480px;
+    max-height: 70%;
     background-color: #ffffff;
     border: 1.5px solid #e7e8e3;
     border-bottom-left-radius: 10px;
@@ -798,7 +799,7 @@
     gap: 2vw;
 
     padding-left: 1.5vw;
-    padding-top: 1.5vw;
+    padding-top: 1.5vh;
   }
 
   .main-block5_Latest-posts-section-subtitle {
@@ -840,25 +841,26 @@
     font-weight: bold;
     width: 95%;
     padding-left: 1.5vw;
-    padding-top: 1.5vw;
+    padding-top: 1.5vh;
   }
 
   .main-block5_Latest-posts-section-desc {
     color: #65665c;
     font-size: 1.2vw;
-    width: 90%;
+    width: 95%;
     padding-left: 1.5vw;
-    padding-top: 1.5vw;
+    padding-top: 1.5vh;
   }
 
   .main-block5_Latest-posts-section-form {
     padding-left: 1.5vw;
-    padding-top: 2.5vw;
+    padding-top: 2.5vh;
+    margin-bottom: 2vh;
   }
 
   .main-block5_Latest-posts-section-form2 {
     padding-left: 1.5vw;
-    padding-top: 1.7vw;
+    padding-top: 1.7vh;
   }
 
   .main-block5_Latest-posts-section-form-button {
