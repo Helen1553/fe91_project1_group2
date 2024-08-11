@@ -1553,9 +1553,10 @@
                         flex-direction: column;
                         align-items: center;
 
+                        margin-right: 0;
                         position: absolute;
                         top: 50px;
-                        right: 0;
+                        
                         width: fit-content;
                         gap: 2rem;
                         height: fit-content;
