@@ -1,1619 +1,1607 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="https://www.svgrepo.com/show/478541/laptop.svg"
-      type="image/x-svg"
-    />
-    <title>Project №1 - "Realco"</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+            rel="shortcut icon"
+            href="https://www.svgrepo.com/show/478541/laptop.svg"
+            type="image/x-svg">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./assets/styles/normalize.css" />
-    <link rel="stylesheet" href="./assets/styles/style.css" />
+        <title>Project №1 - "Realco"</title>
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-  </head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
-  <body class="body">
-    <div class="grid-container_body">
-      <div class="grid-item_body-header">
-        <header class="grid-container_header">
-          <div class="grid-item_sup-header">
-            Get your dream house in a week.
-          </div>
+        <link rel="stylesheet" href="./assets/styles/normalize.css">
+        <link rel="stylesheet" href="./assets/styles/style.css">
 
-          <div class="header_logo">
-            <div class="logo">
-              <img src="./assets/images/footer/logo-orange.svg" alt="logo" />
-              <h4 class="logo_text">Realco</h4>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous"/>
+    </head>
+
+    <body class="body">
+        <div class="grid-container_body">
+            <div class="grid-item_body-header">
+                <header class="grid-container_header">
+                    <div class="grid-item_sup-header">
+                        Get your dream house in a week.
+                    </div>
+                    <div class="header_logo">
+                        <div class="logo">
+                            <img src="./assets/images/header/logo_orange.svg" alt="logo" />
+                            <h4 class="logo_text">
+                                Realco
+                            </h4>
+                        </div>
+                    </div>
+
+                    <nav class="nav">
+                        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+                        <label for="menu-toggle" class="burger-menu">
+                            <div class="line line1"></div>
+                            <div class="line line2"></div>
+                            <div class="line line3"></div>
+                        </label>
+                        <ul class="nav_links">
+                            <li class="header-links"><a href="#Home">Home</a></li>
+                            <li class="header-links"><a href="#About">About</a></li>
+                            <li class="header-links"><a href="#Properties">Properties</a></li>
+                            <li class="header-links"><a href="#Contact">Contact</a></li>
+                            <li class="header-links">
+                                <div class="nav-search">
+                                    <img
+                                        src="./assets/images/header/vector_search.svg"
+                                        alt="лупа"
+                                    />
+                                    <a href="#Search">Search</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="buttons">
+                        <div class="flex-container_buttons">
+                            <button class="cart">
+                                <img
+                                    src="./assets/images/header/vector_shoppingbag.svg"
+                                    alt="корзина"
+                                    />
+                                        Cart
+                            </button>
+                            <button class="find-property">
+                                Find a property
+                            </button>
+                        </div>
+                    </div>
+                    <div class="adaptive-mobile_header_buttons">
+                        <h2 class="main-block1_text-title">
+                            Find house for your family in minutes
+                        </h2>
+                        <form>
+                            <div class="search-form" id="Search">
+                                <svg
+                                    width="16"
+                                    height="16"
+                                    viewBox="0 0 16 16"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M3.27344 8.58594C4.0026 9.3151 4.88802 9.67969 5.92969 9.67969C6.97135 9.67969 7.85677 9.3151 8.58594 8.58594C9.3151 7.85677 9.67969 6.97135 9.67969 5.92969C9.67969 4.88802 9.3151 4.0026 8.58594 3.27344C7.85677 2.54427 6.97135 2.17969 5.92969 2.17969C4.88802 2.17969 4.0026 2.54427 3.27344 3.27344C2.54427 4.0026 2.17969 4.88802 2.17969 5.92969C2.17969 6.97135 2.54427 7.85677 3.27344 8.58594ZM10.9297 9.67969L15.0703 13.8203L13.8203 15.0703L9.67969 10.9297V10.2656L9.44531 10.0312C8.45573 10.8906 7.28385 11.3203 5.92969 11.3203C4.41927 11.3203 3.13021 10.7995 2.0625 9.75781C1.02083 8.71615 0.5 7.4401 0.5 5.92969C0.5 4.41927 1.02083 3.14323 2.0625 2.10156C3.13021 1.03385 4.41927 0.5 5.92969 0.5C7.4401 0.5 8.71615 1.03385 9.75781 2.10156C10.7995 3.14323 11.3203 4.41927 11.3203 5.92969C11.3203 6.47656 11.1901 7.10156 10.9297 7.80469C10.6693 8.48177 10.3698 9.02865 10.0312 9.44531L10.2656 9.67969H10.9297Z"
+                                        fill="#2A2C1F"
+                                />
+                                </svg>
+                            <input type="text" placeholder="Search" id="search-f" />
+                        </div>
+                        <button class="find-property">
+                            Find a property
+                        </button>
+                        </form>
+                    </div>
+                </header>
             </div>
-          </div>
 
-          <nav class="nav">
-            <input type="checkbox" id="menu-toggle" class="menu-toggle" />
-            <label for="menu-toggle" class="burger-menu">
-              <div class="line line1"></div>
-              <div class="line line2"></div>
-              <div class="line line3"></div>
-            </label>
-            <ul class="nav_links">
-              <li class="header-links"><a href="#Home">Home</a></li>
-              <li class="header-links"><a href="#About">About</a></li>
-              <li class="header-links"><a href="#Properties">Properties</a></li>
-              <li class="header-links"><a href="#Contact">Contact</a></li>
-              <li class="header-links">
-                <div class="nav-search">
-                  <img
-                    src="./assets/images/header/vector-search.svg"
-                    alt="лупа"
-                  />
-                  <a href="#Search">Search</a>
-                </div>
-              </li>
-            </ul>
-          </nav>
+            <div class="grid-item_body-main">
+                <main class="grid-container_main">
 
-          <div class="buttons">
-            <div class="flex-container_buttons">
-              <button class="cart">
-                <img
-                  src="./assets/images/header/vector-shopping_bag.svg"
-                  alt="корзина"
-                />
-                Cart
-              </button>
-              <button class="find-property">Find a property</button>
-            </div>
-          </div>
-          <div class="adaptive-mobile_header_buttons">
-            <h2 class="main-block1_text-title">
-              Find house for your family in minutes
-            </h2>
-            <form>
-              <div class="search-form" id="Search">
-                <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M3.27344 8.58594C4.0026 9.3151 4.88802 9.67969 5.92969 9.67969C6.97135 9.67969 7.85677 9.3151 8.58594 8.58594C9.3151 7.85677 9.67969 6.97135 9.67969 5.92969C9.67969 4.88802 9.3151 4.0026 8.58594 3.27344C7.85677 2.54427 6.97135 2.17969 5.92969 2.17969C4.88802 2.17969 4.0026 2.54427 3.27344 3.27344C2.54427 4.0026 2.17969 4.88802 2.17969 5.92969C2.17969 6.97135 2.54427 7.85677 3.27344 8.58594ZM10.9297 9.67969L15.0703 13.8203L13.8203 15.0703L9.67969 10.9297V10.2656L9.44531 10.0312C8.45573 10.8906 7.28385 11.3203 5.92969 11.3203C4.41927 11.3203 3.13021 10.7995 2.0625 9.75781C1.02083 8.71615 0.5 7.4401 0.5 5.92969C0.5 4.41927 1.02083 3.14323 2.0625 2.10156C3.13021 1.03385 4.41927 0.5 5.92969 0.5C7.4401 0.5 8.71615 1.03385 9.75781 2.10156C10.7995 3.14323 11.3203 4.41927 11.3203 5.92969C11.3203 6.47656 11.1901 7.10156 10.9297 7.80469C10.6693 8.48177 10.3698 9.02865 10.0312 9.44531L10.2656 9.67969H10.9297Z"
-                    fill="#2A2C1F"
-                  />
-                </svg>
-                <input type="text" placeholder="Search" id="search-f" />
-              </div>
-              <button class="find-property">Find a property</button>
-            </form>
-          </div>
-        </header>
-      </div>
+                    <div class="grid-item_main-block1">
+                        <div class="main-block1_Find-house">
+                            <img
+                                class="grid-item-block1-stars-up"
+                                src="./assets/images/main_block1_find_house/vector_stairs_up.svg"
+                                alt="stairs-up"
+                            />
 
-      <div class="grid-item_body-main">
-        <main class="grid-container_main">
-          <div class="grid-item_main-block1">
-            <div class="main-block1_Find-house">
-              <img
-                class="grid-item-block1-stars-up"
-                src="./assets/images/main-block1-Find-house-for/vector-stairs-up.svg"
-                alt="stars-up"
-              />
-
-              <div class="main-block1-Find-house-part1" id="Home">
-                <div class="btn-dream-place_text">
-                  <div>
-                    <a class="btn-dream-place" target="#">
-                      Find your dream place
-                    </a>
-                  </div>
-                  <h2 class="main-block1_text-title">
-                    Find house for your family in minutes
-                  </h2>
-                  <p class="main-block1_text">
-                    Aenean sodales mauris quis tellus facilisis, vel mattis
-                    <br />
-                    magna. Interdum curabitur eget aliquam elit in mauris
-                    <br />
-                    purus.
-                  </p>
-                  <form>
-                    <div class="search-form" id="Search">
-                      <svg
-                        width="16"
-                        height="16"
-                        viewBox="0 0 16 16"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M3.27344 8.58594C4.0026 9.3151 4.88802 9.67969 5.92969 9.67969C6.97135 9.67969 7.85677 9.3151 8.58594 8.58594C9.3151 7.85677 9.67969 6.97135 9.67969 5.92969C9.67969 4.88802 9.3151 4.0026 8.58594 3.27344C7.85677 2.54427 6.97135 2.17969 5.92969 2.17969C4.88802 2.17969 4.0026 2.54427 3.27344 3.27344C2.54427 4.0026 2.17969 4.88802 2.17969 5.92969C2.17969 6.97135 2.54427 7.85677 3.27344 8.58594ZM10.9297 9.67969L15.0703 13.8203L13.8203 15.0703L9.67969 10.9297V10.2656L9.44531 10.0312C8.45573 10.8906 7.28385 11.3203 5.92969 11.3203C4.41927 11.3203 3.13021 10.7995 2.0625 9.75781C1.02083 8.71615 0.5 7.4401 0.5 5.92969C0.5 4.41927 1.02083 3.14323 2.0625 2.10156C3.13021 1.03385 4.41927 0.5 5.92969 0.5C7.4401 0.5 8.71615 1.03385 9.75781 2.10156C10.7995 3.14323 11.3203 4.41927 11.3203 5.92969C11.3203 6.47656 11.1901 7.10156 10.9297 7.80469C10.6693 8.48177 10.3698 9.02865 10.0312 9.44531L10.2656 9.67969H10.9297Z"
-                          fill="#2A2C1F"
-                        />
-                      </svg>
-                      <input type="text" placeholder="Search" id="search-f" />
-                    </div>
-                    <button class="find-property">Find a property</button>
-                  </form>
-                </div>
-              </div>
-              <img
-                class="grid-item-block1-stars-down"
-                src="./assets/images/main-block1-Find-house-for/vector-stairs-down.svg"
-                alt="stars-down"
-              />
-              <div class="grid-item_main-block1-img"></div>
-            </div>
-          </div>
-
-          <div class="grid-item_main-block2">
-            <div class="grid-container_main-block2_Home">
-              <div class="grid-item_main-block2-How-it-works">
-                <div class="grid-item_main-block2-How-it-works-logoipsum">
-                  <div
-                    class="grid-item_main-block2-How-it-works-logoipsum-text"
-                  >
-                    As seen on the world's best
-                    <br />
-                    magazines and media
-                  </div>
-                  <div>
-                    <img
-                      src="assets/images/main-block2-How-it-works/logo-logoipsum1.png"
-                      alt="logo"
-                      class="grid-item_main-block2-How-it-works-logoipsum-image"
-                    />
-                    <img
-                      src="assets/images/main-block2-How-it-works/logo-logoipsum2.png"
-                      alt="logo"
-                      class="grid-item_main-block2-How-it-works-logoipsum-image"
-                    />
-                    <img
-                      src="assets/images/main-block2-How-it-works/logo-logoipsum3.png"
-                      alt="logo"
-                      class="grid-item_main-block2-How-it-works-logoipsum-image"
-                    />
-                    <img
-                      src="assets/images/main-block2-How-it-works/logo-logoipsum4.png"
-                      alt="logo"
-                      class="grid-item_main-block2-How-it-works-logoipsum-image"
-                    />
-                    <img
-                      src="assets/images/main-block2-How-it-works/logo-logoipsum5.png"
-                      alt="logo"
-                      class="grid-item_main-block2-How-it-works-logoipsum-image"
-                    />
-                  </div>
-                </div>
-                <div class="grid-item_main-block2-How-it-works-text">
-                  <div
-                    class="grid-item_main-block2-How-it-works-title"
-                    id="About"
-                  >
-                    How it works
-                  </div>
-                  <div class="grid-item_main-block2-How-it-works-desc">
-                    Nunc laoreet consequat nunc at consequat. Praesent aliquam
-                    mi id efficitur pellentesque.
-                    <br />
-                    Maecenas varius felis felis.
-                  </div>
-                </div>
-                <div class="grid-item_main-block2-How-it-works-wrap">
-                  <div class="grid-item_main-block2-How-it-works-section">
-                    <img
-                      src="assets/images/main-block2-How-it-works/frame-house.png"
-                      alt="house"
-                    />
-                    <p class="grid-item_main-block2-How-it-works-section-text">
-                      Find property
-                    </p>
-                    <p class="grid-item_main-block2-How-it-works-section-text2">
-                      Odales mauris quis tellus facilisis, vel mattis magna
-                      interdum. Curabitur eget aliquam elit. In mauris purus,
-                      auctor a eleifend non.
-                    </p>
-                    <img
-                      src="assets/images/main-block2-How-it-works/arrow.png"
-                      alt="arrow"
-                      class="grid-item_main-block2-How-it-works-section-arrow"
-                    />
-                  </div>
-                  <div class="grid-item_main-block2-How-it-works-section">
-                    <img
-                      src="assets/images/main-block2-How-it-works/frame-list.png"
-                      alt="list"
-                    />
-                    <p class="grid-item_main-block2-How-it-works-section-text">
-                      Make a deal
-                    </p>
-                    <p class="grid-item_main-block2-How-it-works-section-text2">
-                      Pellentesque suscipit mauris. Nam dictum, erat a volutpat
-                      varius, urna nisi sollicitudin orci, sagittis facilisis
-                      odio tortor ac mi.
-                    </p>
-                    <img
-                      src="assets/images/main-block2-How-it-works/arrow.png"
-                      alt="arrow"
-                      class="grid-item_main-block2-How-it-works-section-arrow"
-                    />
-                  </div>
-                  <div class="grid-item_main-block2-How-it-works-section">
-                    <img
-                      src="assets/images/main-block2-How-it-works/frame-key.png"
-                      alt="key"
-                    />
-                    <p class="grid-item_main-block2-How-it-works-section-text">
-                      Get your keys
-                    </p>
-                    <p class="grid-item_main-block2-How-it-works-section-text2">
-                      Nulla vel bibendum purus. Etiam tempus quam vel pulvinar
-                      rutrum. Duis semper, metus vitae fermentum consequat.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="grid-item_main-block2-The-best">
-                <div class="grid-item_main-block2-The-best-section">
-                  <div class="grid-item_main-block2-The-best-subtitle">
-                    Comfort first
-                  </div>
-                  <h2 class="grid-item_main-block2-The-best-title">
-                    The best houses for
-                    <br />
-                    family comfort
-                  </h2>
-                  <div class="grid-item_main-block2-The-best-title2">
-                    The best houses <br />for family comfort
-                  </div>
-                  <div class="grid-item_main-block2-The-best-desc">
-                    Ectus ipsum faucibus justo, et semper quam nisl in nibh.
-                    Proin
-                    <br />
-                    sollicitudin, lorem non posuere blandit.
-                  </div>
-                  <div class="grid-item_main-block2-The-best-wrap">
-                    <form class="grid-item_main-block2-The-best-form">
-                      <button
-                        class="grid-item_main-block2-The-best-button-active"
-                      >
-                        Explore properties
-                      </button>
-                    </form>
-                    <form class="grid-item_main-block2-The-best-form">
-                      <button
-                        type="button"
-                        class="grid-item_main-block2-The-best-button"
-                        data-bs-toggle="modal"
-                        data-bs-target="#Modal-2"
-                      >
-                        Contact agent >
-                      </button>
-                    </form>
-                  </div>
-                </div>
-                <div>
-                  <img
-                    src="assets/images/main-block3-The-best-houses-for-family-comfort/img-room.png"
-                    alt="room"
-                    class="grid-item_main-block2-The-best-image"
-                  />
-                </div>
-              </div>
-
-              <div class="grid-item_main-block2-Fast-forward-process">
-                <div>
-                  <img
-                    src="assets/images/main-block4-Fast-forward-process/room.png"
-                    alt="room"
-                    class="grid-item_main-block2-Fast-forward-process-image"
-                  />
-                </div>
-                <div class="grid-item_main-block2-Fast-forward-process-section">
-                  <form>
-                    <button
-                      class="grid-item_main-block2-Fast-forward-process-subtitle"
-                    >
-                      Quick and easy
-                    </button>
-                  </form>
-                  <h2 class="grid-item_main-block2-Fast-forward-process-title">
-                    Fast forward process
-                  </h2>
-                  <div class="grid-item_main-block2-Fast-forward-process-desc">
-                    Ut vitae nisi eu nisi maximus condimentum ac id purus. Duis
-                    sit amet mi arcu praesent nec felis nisl.
-                  </div>
-                  <div
-                    class="grid-item_main-block2-Fast-forward-process-box-wrap"
-                  >
-                    <div class="grid-item_main-block2-Fast-forward-process-box">
-                      <img
-                        src="assets/images/main-block4-Fast-forward-process/frame-wallet.png"
-                        alt="wallet"
-                        class="grid-item_main-block2-Fast-forward-process-image2"
-                      />
-                      <p
-                        class="grid-item_main-block2-Fast-forward-process-text"
-                      >
-                        Affordable prices
-                      </p>
-                      <p
-                        class="grid-item_main-block2-Fast-forward-process-text2"
-                      >
-                        Lorem ipsum dolor sit amet,
-                        <br />
-                        consectetur adipiscing elit.
-                        <br />
-                        Suspendisse varius enim in eros.
-                      </p>
-                    </div>
-                    <div class="grid-item_main-block2-Fast-forward-process-box">
-                      <img
-                        src="assets/images/main-block4-Fast-forward-process/frame-folder.png"
-                        alt="folder"
-                        class="grid-item_main-block2-Fast-forward-process-image2"
-                      />
-                      <p
-                        class="grid-item_main-block2-Fast-forward-process-text"
-                      >
-                        Less paper work
-                      </p>
-                      <p
-                        class="grid-item_main-block2-Fast-forward-process-text2"
-                      >
-                        Curabitur porta luctus semper donec
-                        <br />
-                        eget lobortis leo ac finibus nisi.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="grid-item_main-block2-Fast-forward-process-wrap">
-                    <form
-                      class="grid-item_main-block2-Fast-forward-process-form"
-                    >
-                      <button
-                        class="grid-item_main-block2-Fast-forward-process-button-active"
-                      >
-                        Explore properties
-                      </button>
-                    </form>
-                    <form
-                      class="grid-item_main-block2-Fast-forward-process-form"
-                    >
-                      <button
-                        type="button"
-                        class="grid-item_main-block2-Fast-forward-process-button"
-                        data-bs-toggle="modal"
-                        data-bs-target="#Modal-2"
-                      >
-                        Contact agent >
-                      </button>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="grid-item_main-block3" id="Properties">
-            <div class="grid-container_main-block3_Houses">
-              <div class="grid-item_main-block3-stairs_right">
-                <img
-                  src="./assets/images/main-block5-Houses in your favorite area/vector-stairs-up.svg"
-                  alt="stairs"
-                />
-              </div>
-
-              <div class="grid-item_main-block3-properties">
-                <div class="flex-container_main-block3_properties">
-                  <a class="link_properties" target="#"> Properties </a>
-                  <h2 class="text-title">Houses in your favorite area</h2>
-                </div>
-              </div>
-
-              <div class="grid-item_main-block3-card1">
-                <div
-                  class="card link rounded-3 shadow-lg"
-                  data-bs-toggle="modal"
-                  data-bs-target="#Modal"
-                >
-                  <img
-                    src="./assets/images/main-block5-Houses in your favorite area/img-cozy studio.png"
-                    class="card-img-top"
-                    alt="first house example from the company: Cozy studio in Los Angeles"
-                  />
-                  <div class="card-body">
-                    <div class="d-flex flex-column gap-3">
-                      <div>
-                        <h5 class="card-title fw-bold">
-                          Cozy studio in Los Angeles
-                        </h5>
-                        <h6 class="fw-bold">$ 1,200.00 USD</h6>
-                      </div>
-                      <div class="d-flex gap-3">
-                        <img
-                          src="./assets/images/main-block5-Houses in your favorite area/vector-place.svg"
-                          alt="an image of place-vector"
-                        />
-                        <p class="card-text">2263 Southlea, Los Angeles</p>
-                      </div>
-                      <div class="d-flex gap-4">
-                        <div class="d-flex gap-2">
-                          <img
-                            src="./assets/images/main-block5-Houses in your favorite area/vector-bathtub.svg"
-                            alt="an image of bathtub-vector"
-                          />
-                          <p class="card-text">2</p>
-                        </div>
-                        <div class="d-flex gap-2">
-                          <img
-                            src="./assets/images/main-block5-Houses in your favorite area/vector-bed.svg"
-                            alt="an image of bed-vector"
-                          />
-                          <p class="card-text">2</p>
-                        </div>
-                        <div class="d-flex gap-2">
-                          <img
-                            src="./assets/images/main-block5-Houses in your favorite area/vector-square_foot.svg"
-                            alt="an image of square-foot-vector"
-                          />
-                          <p class="card-text">840 sqft</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="grid-item_main-block3-card2">
-                <div
-                  class="card link rounded-3 shadow-lg"
-                  data-bs-toggle="modal"
-                  data-bs-target="#Modal"
-                >
-                  <img
-                    src="./assets/images/main-block5-Houses in your favorite area/img-tiny home.png"
-                    class="card-img-top"
-                    alt="second house example from the company: Tiny home in San Diego"
-                  />
-                  <div class="card-body">
-                    <div class="d-flex flex-column gap-3">
-                      <div>
-                        <h5 class="card-title fw-bold">
-                          Tiny home in San Diego
-                        </h5>
-                        <h6 class="fw-bold">$ 740,000.00 USD</h6>
-                      </div>
-                      <div class="d-flex gap-3">
-                        <img
-                          src="./assets/images/main-block5-Houses in your favorite area/vector-place.svg"
-                          alt="an image of place-vector"
-                        />
-                        <p class="card-text">2569 El Segundo, San Diego</p>
-                      </div>
-                      <div class="d-flex gap-4">
-                        <div class="d-flex gap-2">
-                          <img
-                            src="./assets/images/main-block5-Houses in your favorite area/vector-bathtub.svg"
-                            alt="an image of bathtub-vector"
-                          />
-                          <p class="card-text">1</p>
-                        </div>
-                        <div class="d-flex gap-2">
-                          <img
-                            src="./assets/images/main-block5-Houses in your favorite area/vector-bed.svg"
-                            alt="an image of bed-vector"
-                          />
-                          <p class="card-text">2</p>
-                        </div>
-                        <div class="d-flex gap-2">
-                          <img
-                            src="./assets/images/main-block5-Houses in your favorite area/vector-square_foot.svg"
-                            alt="an image of square-foot-vector"
-                          />
-                          <p class="card-text">400 sqft</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="grid-item_main-block3-card3">
-                <div
-                  class="card link rounded-3 shadow-lg"
-                  data-bs-toggle="modal"
-                  data-bs-target="#Modal"
-                >
-                  <img
-                    src="./assets/images/main-block5-Houses in your favorite area/img-crown house.png"
-                    class="card-img-top"
-                    alt="third house example from the company: Crown house in New York"
-                  />
-                  <div class="card-body">
-                    <div class="d-flex flex-column gap-3">
-                      <div>
-                        <h5 class="card-title fw-bold">
-                          Crown house in New York
-                        </h5>
-                        <h6 class="fw-bold">$ 980,000.00 USD</h6>
-                      </div>
-                      <div class="d-flex gap-3">
-                        <img
-                          src="./assets/images/main-block5-Houses in your favorite area/vector-place.svg"
-                          alt="an image of place-vector"
-                        />
-                        <p class="card-text">4489 Smity Fielda, New York</p>
-                      </div>
-                      <div class="d-flex gap-4">
-                        <div class="d-flex gap-2">
-                          <img
-                            src="./assets/images/main-block5-Houses in your favorite area/vector-bathtub.svg"
-                            alt="an image of bathtub-vector"
-                          />
-                          <p class="card-text">2</p>
-                        </div>
-                        <div class="d-flex gap-2">
-                          <img
-                            src="./assets/images/main-block5-Houses in your favorite area/vector-bed.svg"
-                            alt="an image of bed-vector"
-                          />
-                          <p class="card-text">4</p>
-                        </div>
-                        <div class="d-flex gap-2">
-                          <img
-                            src="./assets/images/main-block5-Houses in your favorite area/vector-square_foot.svg"
-                            alt="an image of square-foot-vector"
-                          />
-                          <p class="card-text">3200 sqft</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="grid-item_main-block3-card4">
-                <div
-                  class="card link rounded-3 shadow-lg"
-                  data-bs-toggle="modal"
-                  data-bs-target="#Modal"
-                >
-                  <img
-                    src="./assets/images/main-block5-Houses in your favorite area/img-family house in LA.png"
-                    class="card-img-top"
-                    alt="fourth house example from the company: Family house in Los Angeles"
-                  />
-                  <div class="card-body">
-                    <div class="d-flex flex-column gap-3">
-                      <div>
-                        <h5 class="card-title fw-bold">
-                          Family house in Los Angeles
-                        </h5>
-                        <h6 class="fw-bold">$ 4,200.00 USD</h6>
-                      </div>
-                      <div class="d-flex gap-3">
-                        <img
-                          src="./assets/images/main-block5-Houses in your favorite area/vector-place.svg"
-                          alt="an image of place-vector"
-                        />
-                        <p class="card-text">2263 Southlea, Los Angeles</p>
-                      </div>
-                      <div class="d-flex gap-4">
-                        <div class="d-flex gap-2">
-                          <img
-                            src="./assets/images/main-block5-Houses in your favorite area/vector-bathtub.svg"
-                            alt="an image of bathtub-vector"
-                          />
-                          <p class="card-text">2</p>
-                        </div>
-                        <div class="d-flex gap-2">
-                          <img
-                            src="./assets/images/main-block5-Houses in your favorite area/vector-bed.svg"
-                            alt="an image of bed-vector"
-                          />
-                          <p class="card-text">3</p>
-                        </div>
-                        <div class="d-flex gap-2">
-                          <img
-                            src="./assets/images/main-block5-Houses in your favorite area/vector-square_foot.svg"
-                            alt="an image of square-foot-vector"
-                          />
-                          <p class="card-text">1400 sqft</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="grid-item_main-block3-card5">
-                <div
-                  class="card link rounded-3 shadow-lg"
-                  data-bs-toggle="modal"
-                  data-bs-target="#Modal"
-                >
-                  <img
-                    src="./assets/images/main-block5-Houses in your favorite area/img-studio in LV.png"
-                    class="card-img-top"
-                    alt="fifth house example from the company: Studio in Las Vegas"
-                  />
-                  <div class="card-body">
-                    <div class="d-flex flex-column gap-3">
-                      <div>
-                        <h5 class="card-title fw-bold">Studio in Las Vegas</h5>
-                        <h6 class="fw-bold">$ 820,000.00 USD</h6>
-                      </div>
-                      <div class="d-flex gap-3">
-                        <img
-                          src="./assets/images/main-block5-Houses in your favorite area/vector-place.svg"
-                          alt="an image of place-vector"
-                        />
-                        <p class="card-text">2569 Halls Corner, Las Vegas</p>
-                      </div>
-                      <div class="d-flex gap-4">
-                        <div class="d-flex gap-2">
-                          <img
-                            src="./assets/images/main-block5-Houses in your favorite area/vector-bathtub.svg"
-                            alt="an image of bathtub-vector"
-                          />
-                          <p class="card-text">2</p>
-                        </div>
-                        <div class="d-flex gap-2">
-                          <img
-                            src="./assets/images/main-block5-Houses in your favorite area/vector-bed.svg"
-                            alt="an image of bed-vector"
-                          />
-                          <p class="card-text">3</p>
-                        </div>
-                        <div class="d-flex gap-2">
-                          <img
-                            src="./assets/images/main-block5-Houses in your favorite area/vector-square_foot.svg"
-                            alt="an image of square-foot-vector"
-                          />
-                          <p class="card-text">2400 sqft</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="grid-item_main-block3-card6">
-                <div
-                  class="card link rounded-3 shadow-lg"
-                  data-bs-toggle="modal"
-                  data-bs-target="#Modal"
-                >
-                  <img
-                    src="./assets/images/main-block5-Houses in your favorite area/img-San Diego.png"
-                    class="card-img-top"
-                    alt="sixth house example from the company: San Diego story"
-                  />
-                  <div class="card-body">
-                    <div class="d-flex flex-column gap-3">
-                      <div>
-                        <h5 class="card-title fw-bold">San Diego story</h5>
-                        <h6 class="fw-bold">$ 3,700.00 USD</h6>
-                      </div>
-                      <div class="d-flex gap-3">
-                        <img
-                          src="./assets/images/main-block5-Houses in your favorite area/vector-place.svg"
-                          alt="an image of place-vector"
-                        />
-                        <p class="card-text">2569 El Segundo, San Diego</p>
-                      </div>
-                      <div class="d-flex gap-4">
-                        <div class="d-flex gap-2">
-                          <img
-                            src="./assets/images/main-block5-Houses in your favorite area/vector-bathtub.svg"
-                            alt="an image of bathtub-vector"
-                          />
-                          <p class="card-text">1</p>
-                        </div>
-                        <div class="d-flex gap-2">
-                          <img
-                            src="./assets/images/main-block5-Houses in your favorite area/vector-bed.svg"
-                            alt="an image of bed-vector"
-                          />
-                          <p class="card-text">2</p>
-                        </div>
-                        <div class="d-flex gap-2">
-                          <img
-                            src="./assets/images/main-block5-Houses in your favorite area/vector-square_foot.svg"
-                            alt="an image of square-foot-vector"
-                          />
-                          <p class="card-text">650 sqft</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div
-                id="carouselExampleCaptions"
-                class="carousel slide slider"
-                data-ride="carousel"
-              >
-                <div class="carousel-indicators">
-                  <button
-                    type="button"
-                    data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide-to="0"
-                    class="active"
-                    aria-current="true"
-                    aria-label="Slide 1"
-                  ></button>
-                  <button
-                    type="button"
-                    data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide-to="1"
-                    aria-label="Slide 2"
-                  ></button>
-                  <button
-                    type="button"
-                    data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide-to="2"
-                    aria-label="Slide 3"
-                  ></button>
-                  <button
-                    type="button"
-                    data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide-to="3"
-                    aria-label="Slide 4"
-                  ></button>
-                  <button
-                    type="button"
-                    data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide-to="4"
-                    aria-label="Slide 5"
-                  ></button>
-                  <button
-                    type="button"
-                    data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide-to="5"
-                    aria-label="Slide 6"
-                  ></button>
-                </div>
-                <div class="carousel-inner">
-                  <div
-                    class="carousel-item active"
-                    data-bs-toggle="modal"
-                    data-bs-target="#Modal"
-                  >
-                    <img
-                      src="./assets/images/main-block5-Houses in your favorite area/img-cozy studio.png"
-                      class="d-block w-100"
-                      alt="..."
-                    />
-                    <div class="carousel-caption">
-                      <h5>Cozy studio in Los Angeles</h5>
-                      <p>$ 1,200.00 USD</p>
-                    </div>
-                  </div>
-                  <div
-                    class="carousel-item"
-                    data-bs-toggle="modal"
-                    data-bs-target="#Modal"
-                  >
-                    <img
-                      src="./assets/images/main-block5-Houses in your favorite area/img-tiny home.png"
-                      class="d-block w-100"
-                      alt="..."
-                    />
-                    <div class="carousel-caption">
-                      <h5>Tiny home in San Diego</h5>
-                      <p>$ 740,000.00 USD</p>
-                    </div>
-                  </div>
-                  <div
-                    class="carousel-item"
-                    data-bs-toggle="modal"
-                    data-bs-target="#Modal"
-                  >
-                    <img
-                      src="./assets/images/main-block5-Houses in your favorite area/img-crown house.png"
-                      class="d-block w-100"
-                      alt="..."
-                    />
-                    <div class="carousel-caption">
-                      <h5>Crown house in New York</h5>
-                      <p>$ 980,000.00 USD</p>
-                    </div>
-                  </div>
-                  <div
-                    class="carousel-item"
-                    data-bs-toggle="modal"
-                    data-bs-target="#Modal"
-                  >
-                    <img
-                      src="./assets/images/main-block5-Houses in your favorite area/img-family house in LA.png"
-                      class="d-block w-100"
-                      alt="..."
-                    />
-                    <div class="carousel-caption">
-                      <h5>Family house in Los Angeles</h5>
-                      <p>$ 4,200.00 USD</p>
-                    </div>
-                  </div>
-                  <div
-                    class="carousel-item"
-                    data-bs-toggle="modal"
-                    data-bs-target="#Modal"
-                  >
-                    <img
-                      src="./assets/images/main-block5-Houses in your favorite area/img-studio in LV.png"
-                      class="d-block w-100"
-                      alt="..."
-                    />
-                    <div class="carousel-caption d-md-block">
-                      <h5>Studio in Las Vegas</h5>
-                      <p>$ 820,000.00 USD</p>
-                    </div>
-                  </div>
-                  <div
-                    class="carousel-item"
-                    data-bs-toggle="modal"
-                    data-bs-target="#Modal"
-                  >
-                    <img
-                      src="./assets/images/main-block5-Houses in your favorite area/img-San Diego.png"
-                      class="d-block w-100"
-                      alt="..."
-                    />
-                    <div class="carousel-caption">
-                      <h5>San Diego story</h5>
-                      <p>$ 3,700.00 USD</p>
-                    </div>
-                  </div>
-                </div>
-                <button
-                  class="carousel-control-prev"
-                  type="button"
-                  data-bs-target="#carouselExampleCaptions"
-                  data-bs-slide="prev"
-                >
-                  <span
-                    class="carousel-control-prev-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button
-                  class="carousel-control-next"
-                  type="button"
-                  data-bs-target="#carouselExampleCaptions"
-                  data-bs-slide="next"
-                >
-                  <span
-                    class="carousel-control-next-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-
-              <!-- Модальное окно №1 - для разных вариантов домов-->
-              <div
-                class="modal fade"
-                id="Modal"
-                tabindex="-1"
-                role="dialog"
-                aria-labelledby="contactModalLabel"
-                aria-hidden="true"
-              >
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="contactModalLabel">
-                        If you like this type of house, leave your contacts
-                        below:
-                      </h5>
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
-                    </div>
-                    <div class="modal-body">
-                      <form>
-                        <div class="form-group mb-3">
-                          <label for="name" class="col-form-label">
-                            Full Name
-                          </label>
-                          <input
-                            type="text"
-                            class="form-control"
-                            id="name"
-                            placeholder="Enter your name"
-                          />
-                        </div>
-                        <div class="form-group mb-3">
-                          <label for="email" class="col-form-label">
-                            Contact Email Address
-                          </label>
-                          <input
-                            type="email"
-                            class="form-control"
-                            id="email"
-                            placeholder="Enter your email"
-                          />
-                        </div>
-                        <div class="form-group mb-3">
-                          <label for="phone" class="col-form-label">
-                            Phone Number
-                          </label>
-                          <input
-                            type="tel"
-                            class="form-control"
-                            id="phone"
-                            placeholder="555-555-555"
-                          />
-                        </div>
-                        <button
-                          type="submit"
-                          class="btn btn-light px-3 py-3 shadow rounded border"
-                        >
-                          Submit Form
-                        </button>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="grid-item_main-block3-explore_properties">
-                <div class="d-flex gap-3 justify-content-center">
-                  <button
-                    type="button"
-                    class="btn btn-light px-3 py-3 shadow-sm"
-                  >
-                    Explore properties
-                  </button>
-                  <button
-                    type="button"
-                    class="btn px-3 py-3"
-                    data-bs-toggle="modal"
-                    data-bs-target="#Modal-2"
-                  >
-                    Contact agent >
-                  </button>
-                </div>
-              </div>
-
-              <!-- Модальное окно №2 - для Contact agent-->
-              <div
-                class="modal fade"
-                id="Modal-2"
-                tabindex="-1"
-                role="dialog"
-                aria-labelledby="contactModalLabel"
-                aria-hidden="true"
-              >
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="contactModalLabel">
-                        Leave your contact information below and our agent will
-                        contact you in the nearest possible time!
-                      </h5>
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
-                    </div>
-                    <div class="modal-body">
-                      <form>
-                        <div class="form-group mb-3">
-                          <label for="name" class="col-form-label">
-                            Full Name
-                          </label>
-                          <input
-                            type="text"
-                            class="form-control"
-                            id="name"
-                            placeholder="Enter your name"
-                          />
-                        </div>
-                        <div class="form-group mb-3">
-                          <label for="email" class="col-form-label">
-                            Contact Email Address
-                          </label>
-                          <input
-                            type="email"
-                            class="form-control"
-                            id="email"
-                            placeholder="Enter your email"
-                          />
-                        </div>
-                        <div class="form-group mb-3">
-                          <label for="phone" class="col-form-label">
-                            Phone Number
-                          </label>
-                          <input
-                            type="tel"
-                            class="form-control"
-                            id="phone"
-                            placeholder="555-555-555"
-                          />
-                        </div>
-                        <button
-                          type="submit"
-                          class="btn btn-light px-3 py-3 shadow rounded border"
-                        >
-                          Submit Form
-                        </button>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="grid-item_main-block3-stairs_left">
-                <img
-                  src="./assets/images/main-block5-Houses in your favorite area/vector-stairs-down.svg"
-                  alt="stairs down"
-                />
-              </div>
-            </div>
-          </div>
-
-          <div class="grid-item_main-block4">
-            <div class="grid-container_main-block4_information-and-reviews">
-              <div class="grid-item_main-block4-Locations">
-                <div class="flex-container_main-block4-Locations">
-                  <h2 class="text-title">Locations</h2>
-                  <p class="grid-item_main-block4-Locations_text">
-                    Nunc mi ante, fringilla eget iaculis et, maximus vel purus
-                    integer lacus urna, aliquet non
-                    <br />
-                    nisl sit amet.
-                  </p>
-                  <div class="grid-item_main-block4-Locations-card">
-                    <div>
-                      <p class="grid-item_main-block4-Locations-card_tittle">
-                        San Francisco, CA
-                      </p>
-                      <form class="grid-item_main-block4-Fast-Locations-form">
-                        <button
-                          type="button"
-                          data-bs-toggle="modal"
-                          data-bs-target="#Modal-2"
-                          class="grid-item_main-block4-Fast-Locations-form-button"
-                        >
-                          View Properties >
-                        </button>
-                      </form>
-                    </div>
-
-                    <div>
-                      <p class="grid-item_main-block4-Locations-card_tittle">
-                        Los Angeles, CA
-                      </p>
-                      <form class="grid-item_main-block4-Fast-Locations-form">
-                        <button
-                          type="button"
-                          data-bs-toggle="modal"
-                          data-bs-target="#Modal-2"
-                          class="grid-item_main-block4-Fast-Locations-form-button"
-                        >
-                          View Properties >
-                        </button>
-                      </form>
-                    </div>
-
-                    <div>
-                      <p class="grid-item_main-block4-Locations-card_tittle">
-                        San Diego, CA
-                      </p>
-                      <form class="grid-item_main-block4-Fast-Locations-form">
-                        <button
-                          type="button"
-                          data-bs-toggle="modal"
-                          data-bs-target="#Modal-2"
-                          class="grid-item_main-block4-Fast-Locations-form-button"
-                        >
-                          View Properties >
-                        </button>
-                      </form>
-                    </div>
-
-                    <div>
-                      <p class="grid-item_main-block4-Locations-card_tittle">
-                        New York, NY
-                      </p>
-                      <form class="grid-item_main-block4-Fast-Locations-form">
-                        <button
-                          type="button"
-                          data-bs-toggle="modal"
-                          data-bs-target="#Modal-2"
-                          class="grid-item_main-block4-Fast-Locations-form-button"
-                        >
-                          View Properties >
-                        </button>
-                      </form>
-                    </div>
-
-                    <div>
-                      <p class="grid-item_main-block4-Locations-card_tittle">
-                        Las Vegas, NV
-                      </p>
-                      <form class="grid-item_main-block4-Fast-Locations-form">
-                        <button
-                          type="button"
-                          data-bs-toggle="modal"
-                          data-bs-target="#Modal-2"
-                          class="grid-item_main-block4-Fast-Locations-form-button"
-                        >
-                          View Properties >
-                        </button>
-                      </form>
-                    </div>
-
-                    <div>
-                      <p class="grid-item_main-block4-Locations-card_tittle">
-                        Miami, FL
-                      </p>
-                      <form class="grid-item_main-block4-Fast-Locations-form">
-                        <button
-                          type="button"
-                          data-bs-toggle="modal"
-                          data-bs-target="#Modal-2"
-                          class="grid-item_main-block4-Fast-Locations-form-button"
-                        >
-                          View Properties >
-                        </button>
-                      </form>
-                    </div>
-                  </div>
-                  <div class="d-flex gap-3 justify-content-center">
-                    <button
-                      type="button"
-                      class="btn btn-light px-3 py-3 shadow-sm"
-                    >
-                      Explore properties
-                    </button>
-                    <button
-                      type="button"
-                      class="btn px-3 py-3"
-                      data-bs-toggle="modal"
-                      data-bs-target="#Modal-2"
-                    >
-                      Contact agent >
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div class="grid-item_main-block4-Families">
-                <div class="flex-container_main-block4-Families">
-                  <div class="grid-item_main-block4-Families-img">
-                    <img
-                      src="./assets/images/main-block7-Families are our priority/frame-family-svg.svg"
-                      alt="families icon"
-                    />
-                  </div>
-                  <div>
-                    <h2 class="text-title" id="text-title-families">
-                      Families are our priority
-                    </h2>
-                    <p class="grid-item_main-block4-families_text">
-                      Curabitur eget aliquam elit. In mauris purus, auctor a
-                      eleifend non, placerat vel arcu. In non
-                      <br />
-                      consectetur lorem. Morbi non varius sapien suscipit mauri.
-                    </p>
-                  </div>
-                  <form action="get">
-                    <button class="orande_button" id="families_button">
-                      Get started
-                    </button>
-                  </form>
-                </div>
-              </div>
-
-              <div class="grid-item_main-block4-What">
-                <div class="grid-container_main-block4-What">
-                  <div class="grid-item_main-block4-What-title rounded-3">
-                    <h2 class="text-title">What customers say</h2>
-                    <p class="text-under-h2">
-                      Faucibus orci luctus et ultrices posuere cubilia curae.
-                    </p>
-                  </div>
-
-                  <div class="grid-item_main-block4-What-card1">
-                    <a href="#" class="text-decoration-none">
-                      <div class="card rounded-3 shadow-lg">
-                        <div class="card-body mt-2">
-                          <img
-                            src="./assets/images/main-block8-What customers say/frame-stars.svg"
-                            alt="5 stars (evaluation of the service)"
-                            class="mb-4"
-                          />
-
-                          <p class="card-text mb-4">
-                            "Aliquam erat volutpat. Nulla pretium nec urna et
-                            convallis. Ut varius mi lacus, nec molestie libero
-                            ultricies nec. Aenean lacinia dui elit, ut gravida
-                            quam."
-                          </p>
-                          <div class="d-flex gap-3">
-                            <div>
-                              <img
-                                src="./assets/images/main-block8-What customers say/img-a boy (left).png"
-                                alt="client's photo"
-                              />
+                            <div class="main-block1-Find-house-part1" id="Home">
+                                <div class="btn-dream-place_text">
+                                    <div>
+                                        <a class="btn-dream-place" target="#">
+                                            Find your dream place
+                                        </a>
+                                    </div>
+                                    <h2 class="main-block1_text-title">
+                                        Find house for your family in minutes
+                                    </h2>
+                                    <p class="main-block1_text">
+                                        Aenean sodales mauris quis tellus facilisis, vel mattis
+                                        <br>
+                                        magna. Interdum curabitur eget aliquam elit in mauris
+                                        <br>
+                                        purus.
+                                    </p>
+                                    <form class="form_dream-place">
+                                        <div class="search-form" id="Search">
+                                            <svg
+                                                width="16"
+                                                height="16"
+                                                viewBox="0 0 16 16"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                d="M3.27344 8.58594C4.0026 9.3151 4.88802 9.67969 5.92969 9.67969C6.97135 9.67969 7.85677 9.3151 8.58594 8.58594C9.3151 7.85677 9.67969 6.97135 9.67969 5.92969C9.67969 4.88802 9.3151 4.0026 8.58594 3.27344C7.85677 2.54427 6.97135 2.17969 5.92969 2.17969C4.88802 2.17969 4.0026 2.54427 3.27344 3.27344C2.54427 4.0026 2.17969 4.88802 2.17969 5.92969C2.17969 6.97135 2.54427 7.85677 3.27344 8.58594ZM10.9297 9.67969L15.0703 13.8203L13.8203 15.0703L9.67969 10.9297V10.2656L9.44531 10.0312C8.45573 10.8906 7.28385 11.3203 5.92969 11.3203C4.41927 11.3203 3.13021 10.7995 2.0625 9.75781C1.02083 8.71615 0.5 7.4401 0.5 5.92969C0.5 4.41927 1.02083 3.14323 2.0625 2.10156C3.13021 1.03385 4.41927 0.5 5.92969 0.5C7.4401 0.5 8.71615 1.03385 9.75781 2.10156C10.7995 3.14323 11.3203 4.41927 11.3203 5.92969C11.3203 6.47656 11.1901 7.10156 10.9297 7.80469C10.6693 8.48177 10.3698 9.02865 10.0312 9.44531L10.2656 9.67969H10.9297Z"
+                                                fill="#2A2C1F"
+                                                />
+                                            </svg>
+                                            <input type="text" placeholder="Search" id="search-f" />
+                                        </div>
+                                        <button class="find-property">
+                                            Find a property
+                                        </button>
+                                    </form>
+                                </div>
                             </div>
-                            <div>
-                              <p class="mb-0">
-                                <b>Michael Webb</b>
-                              </p>
-                              <p class="main-block4-card-customer">Customer</p>
-                            </div>
-                          </div>
+                            <img
+                                class="grid-item-block1-stars-down"
+                                src="./assets/images/main_block1_find_house/vector_stairs_down.svg"
+                                alt="stairs-down"
+                            />
+                            <div class="grid-item_main-block1-img"></div>
                         </div>
-                      </div>
-                    </a>
-                  </div>
+                    </div>
 
-                  <div class="grid-item_main-block4-What-card2">
-                    <a href="#" class="text-decoration-none">
-                      <div class="card rounded-3 shadow-lg">
-                        <div class="card-body mt-2">
-                          <img
-                            src="./assets/images/main-block8-What customers say/frame-stars.svg"
-                            alt="5 stars (evaluation of the service)"
-                            class="mb-4"
-                          />
+                    <div class="grid-item_main-block2">
+                        <div class="grid-container_main-block2_Home">
+                            <div class="grid-item_main-block2-How-it-works">
+                                <div class="grid-item_main-block2-How-it-works-logoipsum">
+                                    <div
+                                        class="grid-item_main-block2-How-it-works-logoipsum-text">
+                                        As seen on the world's best
+                                        <br>
+                                        magazines and media
+                                    </div>
+                                    <div>
+                                        <img
+                                            src="./assets/images/main_block2_how_it_works/logo_logoipsum1.png"
+                                            alt="logo"
+                                            class="grid-item_main-block2-How-it-works-logoipsum-image"
+                                        />
+                                        <img
+                                            src="./assets/images/main_block2_how_it_works/logo_logoipsum2.png"
+                                            alt="logo"
+                                            class="grid-item_main-block2-How-it-works-logoipsum-image"
+                                        />
+                                        <img
+                                            src="./assets/images/main_block2_how_it_works/logo_logoipsum3.png"
+                                            alt="logo"
+                                            class="grid-item_main-block2-How-it-works-logoipsum-image"
+                                        />
+                                        <img
+                                            src="./assets/images/main_block2_how_it_works/logo_logoipsum4.png"
+                                            alt="logo"
+                                            class="grid-item_main-block2-How-it-works-logoipsum-image"
+                                        />
+                                        <img
+                                            src="./assets/images/main_block2_how_it_works/logo_logoipsum5.png"
+                                            alt="logo"
+                                            class="grid-item_main-block2-How-it-works-logoipsum-image"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="grid-item_main-block2-How-it-works-text">
+                                    <div
+                                        class="grid-item_main-block2-How-it-works-title"
+                                        id="About">
+                                            How it works
+                                    </div>
+                                    <div class="grid-item_main-block2-How-it-works-desc">
+                                        Nunc laoreet consequat nunc at consequat. Praesent aliquam
+                                        mi id efficitur pellentesque.
+                                        <br>
+                                        Maecenas varius felis felis.
+                                    </div>
+                                </div>
+                                <div class="grid-item_main-block2-How-it-works-wrap">
+                                    <div class="grid-item_main-block2-How-it-works-section">
+                                        <img
+                                            src="./assets/images/main_block2_how_it_works/frame-house.png"
+                                            alt="house"
+                                        />
+                                        <p class="grid-item_main-block2-How-it-works-section-text">
+                                            Find property
+                                        </p>
+                                        <p class="grid-item_main-block2-How-it-works-section-text2">
+                                            Odales mauris quis tellus facilisis, vel mattis magna
+                                            interdum. Curabitur eget aliquam elit. In mauris purus,
+                                            auctor a eleifend non.
+                                        </p>
+                                        <img
+                                            src="./assets/images/main_block2_how_it_works/vector_arrow.png"
+                                            alt="arrow"
+                                            class="grid-item_main-block2-How-it-works-section-arrow"
+                                        />
+                                    </div>
+                                    <div class="grid-item_main-block2-How-it-works-section">
+                                        <img
+                                            src="./assets/images/main_block2_how_it_works/frame_list.png"
+                                            alt="list"
+                                        />
+                                        <p class="grid-item_main-block2-How-it-works-section-text">
+                                            Make a deal
+                                        </p>
+                                        <p class="grid-item_main-block2-How-it-works-section-text2">
+                                            Pellentesque suscipit mauris. Nam dictum, erat a volutpat
+                                            varius, urna nisi sollicitudin orci, sagittis facilisis
+                                            odio tortor ac mi.
+                                        </p>
+                                        <img
+                                            src="./assets/images/main_block2_how_it_works/vector_arrow.png"
+                                            alt="arrow"
+                                            class="grid-item_main-block2-How-it-works-section-arrow"
+                                        />
+                                    </div>
+                                    <div class="grid-item_main-block2-How-it-works-section">
+                                        <img
+                                            src="./assets/images/main_block2_how_it_works/frame_key.png"
+                                            alt="key"
+                                        />
+                                        <p class="grid-item_main-block2-How-it-works-section-text">
+                                            Get your keys
+                                        </p>
+                                        <p class="grid-item_main-block2-How-it-works-section-text2">
+                                            Nulla vel bibendum purus. Etiam tempus quam vel pulvinar
+                                            rutrum. Duis semper, metus vitae fermentum consequat.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
 
-                          <p class="card-text mb-4">
-                            "Class aptent taciti sociosqu ad litora
-                            <br />
-                            torquent per conubia nostra, per
-                            <br />
-                            inceptos himenaeos. Morbi pretium iaculis ultricies.
-                            Aenean in leo vitae tortor."
-                          </p>
-                          <div class="d-flex gap-3">
-                            <div>
-                              <img
-                                src="./assets/images/main-block8-What customers say/img-woman (center).png"
-                                alt="client's photo"
-                              />
+                            <div class="grid-item_main-block2-The-best">
+                                <div class="grid-item_main-block2-The-best-section">
+                                    <div class="grid-item_main-block2-The-best-subtitle">
+                                        Comfort first
+                                    </div>
+                                    <h2 class="grid-item_main-block2-The-best-title">
+                                        The best houses for
+                                        <br>
+                                        family comfort
+                                    </h2>
+                                    <div class="grid-item_main-block2-The-best-title2">
+                                        The best houses
+                                        <br>
+                                        for family comfort
+                                    </div>
+                                    <div class="grid-item_main-block2-The-best-desc">
+                                        Ectus ipsum faucibus justo, et semper quam nisl in nibh.
+                                        Proin
+                                        <br>
+                                        sollicitudin, lorem non posuere blandit.
+                                    </div>
+                                    <div class="grid-item_main-block2-The-best-wrap">
+                                        <form class="grid-item_main-block2-The-best-form">
+                                            <button
+                                                class="grid-item_main-block2-The-best-button-active">
+                                                Explore properties
+                                            </button>
+                                        </form>
+                                        <form class="grid-item_main-block2-The-best-form">
+                                            <button
+                                                type="button"
+                                                class="grid-item_main-block2-The-best-button"
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#Modal-2">
+                                                Contact agent >
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div>
+                                    <img
+                                        src="./assets/images/main_block3_the_best_houses/img_room.png"
+                                        alt="room"
+                                        class="grid-item_main-block2-The-best-image"
+                                    />
+                                </div>
                             </div>
-                            <div>
-                              <p class="mb-0">
-                                <b>Amber Keene</b>
-                              </p>
-                              <p class="main-block4-card-customer">Customer</p>
+
+                            <div class="grid-item_main-block2-Fast-forward-process">
+                                <div>
+                                    <img
+                                        src="./assets/images/main_block4_fast_forward_process/img_room.png"
+                                        alt="room"
+                                        class="grid-item_main-block2-Fast-forward-process-image"
+                                    />
+                                </div>
+                                <div class="grid-item_main-block2-Fast-forward-process-section">
+                                    <form>
+                                        <button class="grid-item_main-block2-Fast-forward-process-subtitle">
+                                            Quick and easy
+                                        </button>
+                                    </form>
+                                    <h2 class="grid-item_main-block2-Fast-forward-process-title">
+                                        Fast forward process
+                                    </h2>
+                                    <div class="grid-item_main-block2-Fast-forward-process-desc">
+                                        Ut vitae nisi eu nisi maximus condimentum ac id purus. Duis
+                                        sit amet mi arcu praesent nec felis nisl.
+                                    </div>
+                                    <div class="grid-item_main-block2-Fast-forward-process-box-wrap">
+                                        <div class="grid-item_main-block2-Fast-forward-process-box">
+                                            <img
+                                                src="./assets/images/main_block4_fast_forward_process/frame_wallet.png"
+                                                alt="wallet"
+                                                class="grid-item_main-block2-Fast-forward-process-image2"
+                                            />
+                                            <p class="grid-item_main-block2-Fast-forward-process-text">
+                                                Affordable prices
+                                            </p>
+                                            <p class="grid-item_main-block2-Fast-forward-process-text2">
+                                                Lorem ipsum dolor sit amet,
+                                                <br>
+                                                consectetur adipiscing elit.
+                                                <br>
+                                                Suspendisse varius enim in eros.
+                                            </p>
+                                        </div>
+                                        <div class="grid-item_main-block2-Fast-forward-process-box">
+                                            <img
+                                                src="./assets/images/main_block4_fast_forward_process/frame_folder.png"
+                                                alt="folder"
+                                                class="grid-item_main-block2-Fast-forward-process-image2"
+                                            />
+                                            <p class="grid-item_main-block2-Fast-forward-process-text">
+                                                Less paper work
+                                            </p>
+                                            <p class="grid-item_main-block2-Fast-forward-process-text2">
+                                                Curabitur porta luctus semper donec
+                                                <br>
+                                                eget lobortis leo ac finibus nisi.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="grid-item_main-block2-Fast-forward-process-wrap">
+                                        <form class="grid-item_main-block2-Fast-forward-process-form">
+                                            <button class="grid-item_main-block2-Fast-forward-process-button-active">
+                                                Explore properties
+                                            </button>
+                                        </form>
+                                        <form class="grid-item_main-block2-Fast-forward-process-form">
+                                            <button
+                                                type="button"
+                                                class="grid-item_main-block2-Fast-forward-process-button"
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#Modal-2">
+                                                Contact agent >
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
-                          </div>
                         </div>
-                      </div>
-                    </a>
-                  </div>
+                    </div>
 
-                  <div class="grid-item_main-block4-What-card3">
-                    <a href="#" class="text-decoration-none">
-                      <div class="card rounded-3 shadow-lg">
-                        <div class="card-body mt-2">
-                          <img
-                            src="./assets/images/main-block8-What customers say/frame-stars.svg"
-                            alt="5 stars (evaluation of the service)"
-                            class="mb-4"
-                          />
+                    <div class="grid-item_main-block3" id="Properties">
+                        <div class="grid-container_main-block3_Houses">
+                            <div class="grid-item_main-block3-stairs_right">
+                                <img
+                                src="./assets/images/main_block5_houses_in_your_fav_area/vector_stairs_up.svg"
+                                alt="stairs"
+                                />
+                            </div>
 
-                          <p class="card-text mb-4">
-                            "Condimentum viverra orci. Pellentesque suscipit
-                            odio nisl, non ultricies purus mattis eget. In
-                            placerat, lorem a sodales ullamcorper, eros nibh
-                            laoreet nisl."
-                          </p>
-                          <div class="d-flex gap-3">
-                            <div>
-                              <img
-                                src="./assets/images/main-block8-What customers say/img-woman (right).png"
-                                alt="client's photo"
-                              />
+                            <div class="grid-item_main-block3-properties">
+                                <div class="flex-container_main-block3_properties">
+                                    <a class="link_properties" target="#">
+                                        Properties
+                                    </a>
+                                    <h2 class="text-title">
+                                        Houses in your favorite area
+                                    </h2>
+                                </div>
                             </div>
-                            <div>
-                              <p class="mb-0">
-                                <b>Sarah Tarleton</b>
-                              </p>
-                              <p class="main-block4-card-customer">Customer</p>
+
+                            <div class="grid-item_main-block3-card1">
+                                <div class="card link rounded-3 shadow-lg" data-bs-toggle="modal" data-bs-target="#Modal">
+                                    <img
+                                        src="./assets/images/main_block5_houses_in_your_fav_area/img_cozy_studio.png"
+                                        class="card-img-top"
+                                        alt="first house example from the company: Cozy studio in Los Angeles"
+                                    />
+                                    <div class="card-body">
+                                        <div class="d-flex flex-column gap-3">
+                                            <div>
+                                                <h5 class="card-title fw-bold">
+                                                    Cozy studio in Los Angeles
+                                                </h5>
+                                                <h6 class="fw-bold">
+                                                    $ 1,200.00 USD
+                                                </h6>
+                                            </div>
+                                            <div class="d-flex gap-3">
+                                                <img
+                                                    src="./assets/images/main_block5_houses_in_your_fav_area/vector_place.svg"
+                                                    alt="an image of place-vector"
+                                                />
+                                                <p class="card-text">
+                                                    2263 Southlea, Los Angeles
+                                                </p>
+                                            </div>
+                                            <div class="d-flex gap-4">
+                                                <div class="d-flex gap-2">
+                                                    <img
+                                                        src="./assets/images/main_block5_houses_in_your_fav_area/vector_bathtub.svg"
+                                                        alt="an image of bathtub-vector"
+                                                    />
+                                                    <p class="card-text">2</p>
+                                                </div>
+                                                <div class="d-flex gap-2">
+                                                    <img
+                                                        src="./assets/images/main_block5_houses_in_your_fav_area/vector_bed.svg"
+                                                        alt="an image of bed-vector"
+                                                    />
+                                                    <p class="card-text">2</p>
+                                                </div>
+                                                <div class="d-flex gap-2">
+                                                    <img
+                                                        src="./assets/images/main_block5_houses_in_your_fav_area/vector_square_foot.svg"
+                                                        alt="an image of square-foot-vector"
+                                                    />
+                                                    <p class="card-text">
+                                                        840 sqft
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                          </div>
+
+                            <div class="grid-item_main-block3-card2">
+                                <div
+                                    class="card link rounded-3 shadow-lg"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#Modal">
+                                    <img
+                                        src="./assets/images/main_block5_houses_in_your_fav_area/img_tiny_home.png"
+                                        class="card-img-top"
+                                        alt="second house example from the company: Tiny home in San Diego"
+                                    />
+                                    <div class="card-body">
+                                        <div class="d-flex flex-column gap-3">
+                                            <div>
+                                                <h5 class="card-title fw-bold">
+                                                    Tiny home in San Diego
+                                                </h5>
+                                                <h6 class="fw-bold">
+                                                    $ 740,000.00 USD
+                                                </h6>
+                                            </div>
+                                            <div class="d-flex gap-3">
+                                                <img
+                                                    src="./assets/images/main_block5_houses_in_your_fav_area/vector_place.svg"
+                                                    alt="an image of place-vector"
+                                                />
+                                                <p class="card-text">
+                                                    2569 El Segundo, San Diego
+                                                </p>
+                                            </div>
+                                            <div class="d-flex gap-4">
+                                                <div class="d-flex gap-2">
+                                                    <img
+                                                        src="./assets/images/main_block5_houses_in_your_fav_area/vector_bathtub.svg"
+                                                        alt="an image of bathtub-vector"
+                                                    />
+                                                    <p class="card-text">1</p>
+                                                </div>
+                                                <div class="d-flex gap-2">
+                                                    <img
+                                                        src="./assets/images/main_block5_houses_in_your_fav_area/vector_bed.svg"
+                                                        alt="an image of bed-vector"
+                                                    />
+                                                    <p class="card-text">2</p>
+                                                </div>
+                                                <div class="d-flex gap-2">
+                                                    <img
+                                                        src="./assets/images/main_block5_houses_in_your_fav_area/vector_square_foot.svg"
+                                                        alt="an image of square-foot-vector"
+                                                    />
+                                                    <p class="card-text">
+                                                        400 sqft
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid-item_main-block3-card3">
+                                <div
+                                    class="card link rounded-3 shadow-lg"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#Modal">
+                                    <img
+                                        src="./assets/images/main_block5_houses_in_your_fav_area/img_crown_house.png"
+                                        class="card-img-top"
+                                        alt="third house example from the company: Crown house in New York"
+                                    />
+                                    <div class="card-body">
+                                        <div class="d-flex flex-column gap-3">
+                                            <div>
+                                                <h5 class="card-title fw-bold">
+                                                    Crown house in New York
+                                                </h5>
+                                                <h6 class="fw-bold">
+                                                    $ 980,000.00 USD
+                                                </h6>
+                                            </div>
+                                            <div class="d-flex gap-3">
+                                                <img
+                                                src="./assets/images/main_block5_houses_in_your_fav_area/vector_place.svg"
+                                                alt="an image of place-vector"
+                                                />
+                                                <p class="card-text">
+                                                4489 Smity Fielda, New York
+                                                </p>
+                                            </div>
+                                            <div class="d-flex gap-4">
+                                                <div class="d-flex gap-2">
+                                                    <img
+                                                        src="./assets/images/main_block5_houses_in_your_fav_area/vector_bathtub.svg"
+                                                        alt="an image of bathtub-vector"
+                                                    />
+                                                    <p class="card-text">2</p>
+                                                </div>
+                                                <div class="d-flex gap-2">
+                                                    <img
+                                                        src="./assets/images/main_block5_houses_in_your_fav_area/vector_bed.svg"
+                                                        alt="an image of bed-vector"
+                                                    />
+                                                    <p class="card-text">4</p>
+                                                </div>
+                                                <div class="d-flex gap-2">
+                                                    <img
+                                                        src="./assets/images/main_block5_houses_in_your_fav_area/vector_square_foot.svg"
+                                                        alt="an image of square-foot-vector"
+                                                    />
+                                                    <p class="card-text">
+                                                        3200 sqft
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid-item_main-block3-card4">
+                                <div
+                                    class="card link rounded-3 shadow-lg"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#Modal">
+                                    <img
+                                        src="./assets/images/main_block5_houses_in_your_fav_area/img_family_house_la.png"
+                                        class="card-img-top"
+                                        alt="fourth house example from the company: Family house in Los Angeles"
+                                    />
+                                    <div class="card-body">
+                                        <div class="d-flex flex-column gap-3">
+                                            <div>
+                                                <h5 class="card-title fw-bold">
+                                                    Family house in Los Angeles
+                                                </h5>
+                                                <h6 class="fw-bold">
+                                                    $ 4,200.00 USD
+                                                </h6>
+                                            </div>
+                                            <div class="d-flex gap-3">
+                                                <img
+                                                    src="./assets/images/main_block5_houses_in_your_fav_area/vector_place.svg"
+                                                    alt="an image of place-vector"
+                                                />
+                                                <p class="card-text">
+                                                    2263 Southlea, Los Angeles
+                                                </p>
+                                            </div>
+                                            <div class="d-flex gap-4">
+                                                <div class="d-flex gap-2">
+                                                    <img
+                                                        src="./assets/images/main_block5_houses_in_your_fav_area/vector_bathtub.svg"
+                                                        alt="an image of bathtub-vector"
+                                                    />
+                                                    <p class="card-text">2</p>
+                                                </div>
+                                                <div class="d-flex gap-2">
+                                                    <img
+                                                        src="./assets/images/main_block5_houses_in_your_fav_area/vector_bed.svg"
+                                                        alt="an image of bed-vector"
+                                                    />
+                                                    <p class="card-text">3</p>
+                                                </div>
+                                                <div class="d-flex gap-2">
+                                                    <img
+                                                        src="./assets/images/main_block5_houses_in_your_fav_area/vector_square_foot.svg"
+                                                        alt="an image of square-foot-vector"
+                                                    />
+                                                    <p class="card-text">
+                                                        1400 sqft
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid-item_main-block3-card5">
+                                <div
+                                    class="card link rounded-3 shadow-lg"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#Modal">
+                                    <img
+                                        src="./assets/images/main_block5_houses_in_your_fav_area/img_studio_lv.png"
+                                        class="card-img-top"
+                                        alt="fifth house example from the company: Studio in Las Vegas"
+                                    />
+                                    <div class="card-body">
+                                        <div class="d-flex flex-column gap-3">
+                                            <div>
+                                                <h5 class="card-title fw-bold">
+                                                    Studio in Las Vegas
+                                                </h5>
+                                                <h6 class="fw-bold">
+                                                    $ 820,000.00 USD
+                                                </h6>
+                                            </div>
+                                            <div class="d-flex gap-3">
+                                                <img
+                                                    src="./assets/images/main_block5_houses_in_your_fav_area/vector_place.svg"
+                                                    alt="an image of place-vector"
+                                                    />
+                                                    <p class="card-text">
+                                                        2569 Halls Corner, Las Vegas
+                                                    </p>
+                                            </div>
+                                            <div class="d-flex gap-4">
+                                                <div class="d-flex gap-2">
+                                                    <img
+                                                        src="./assets/images/main_block5_houses_in_your_fav_area/vector_bathtub.svg"
+                                                        alt="an image of bathtub-vector"
+                                                    />
+                                                    <p class="card-text">2</p>
+                                                </div>
+                                                <div class="d-flex gap-2">
+                                                    <img
+                                                        src="./assets/images/main_block5_houses_in_your_fav_area/vector_bed.svg"
+                                                        alt="an image of bed-vector"
+                                                    />
+                                                    <p class="card-text">3</p>
+                                                </div>
+                                                <div class="d-flex gap-2">
+                                                    <img
+                                                        src="./assets/images/main_block5_houses_in_your_fav_area/vector_square_foot.svg"
+                                                        alt="an image of square-foot-vector"
+                                                    />
+                                                    <p class="card-text">
+                                                        2400 sqft
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid-item_main-block3-card6">
+                                <div
+                                    class="card link rounded-3 shadow-lg"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#Modal">
+                                    <img
+                                        src="./assets/images/main_block5_houses_in_your_fav_area/img_sd.png"
+                                        class="card-img-top"
+                                        alt="sixth house example from the company: San Diego story"
+                                    />
+                                    <div class="card-body">
+                                        <div class="d-flex flex-column gap-3">
+                                            <div>
+                                                <h5 class="card-title fw-bold">
+                                                    San Diego story
+                                                </h5>
+                                                <h6 class="fw-bold">
+                                                    $ 3,700.00 USD
+                                                </h6>
+                                            </div>
+                                            <div class="d-flex gap-3">
+                                                <img
+                                                    src="./assets/images/main_block5_houses_in_your_fav_area/vector_place.svg"
+                                                    alt="an image of place-vector"
+                                                    />
+                                                    <p class="card-text">
+                                                        2569 El Segundo, San Diego
+                                                    </p>
+                                            </div>
+                                            <div class="d-flex gap-4">
+                                                <div class="d-flex gap-2">
+                                                    <img
+                                                        src="./assets/images/main_block5_houses_in_your_fav_area/vector_bathtub.svg"
+                                                        alt="an image of bathtub-vector"
+                                                    />
+                                                    <p class="card-text">1</p>
+                                                </div>
+                                                <div class="d-flex gap-2">
+                                                    <img
+                                                        src="./assets/images/main_block5_houses_in_your_fav_area/vector_bed.svg"
+                                                        alt="an image of bed-vector"
+                                                    />
+                                                    <p class="card-text">2</p>
+                                                </div>
+                                                <div class="d-flex gap-2">
+                                                    <img
+                                                        src="./assets/images/main_block5_houses_in_your_fav_area/vector_square_foot.svg"
+                                                        alt="an image of square-foot-vector"
+                                                    />
+                                                    <p class="card-text">
+                                                        650 sqft
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                id="carouselExampleCaptions"
+                                class="carousel slide slider"
+                                data-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button
+                                        type="button"
+                                        data-bs-target="#carouselExampleCaptions"
+                                        data-bs-slide-to="0"
+                                        class="active"
+                                        aria-current="true"
+                                        aria-label="Slide 1">
+                                    </button>
+                                    <button
+                                        type="button"
+                                        data-bs-target="#carouselExampleCaptions"
+                                        data-bs-slide-to="1"
+                                        aria-label="Slide 2">
+                                    </button>
+                                    <button
+                                        type="button"
+                                        data-bs-target="#carouselExampleCaptions"
+                                        data-bs-slide-to="2"
+                                        aria-label="Slide 3">
+                                    </button>
+                                    <button
+                                        type="button"
+                                        data-bs-target="#carouselExampleCaptions"
+                                        data-bs-slide-to="3"
+                                        aria-label="Slide 4">
+                                    </button>
+                                    <button
+                                        type="button"
+                                        data-bs-target="#carouselExampleCaptions"
+                                        data-bs-slide-to="4"
+                                        aria-label="Slide 5">
+                                    </button>
+                                    <button
+                                        type="button"
+                                        data-bs-target="#carouselExampleCaptions"
+                                        data-bs-slide-to="5"
+                                        aria-label="Slide 6">
+                                    </button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div
+                                        class="carousel-item active"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#Modal">
+                                        <img
+                                            src="./assets/images/main_block5_houses_in_your_fav_area/img_cozy_studio.png"
+                                            class="d-block w-100"
+                                            alt="cozy studio in Los Angeles"
+                                        />
+                                        <div class="carousel-caption">
+                                            <h5>Cozy studio in Los Angeles</h5>
+                                            <p>$ 1,200.00 USD</p>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="carousel-item"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#Modal">
+                                        <img
+                                            src="./assets/images/main_block5_houses_in_your_fav_area/img_tiny_home.png"
+                                            class="d-block w-100"
+                                            alt="tiny home in San Diego"
+                                            />
+                                        <div class="carousel-caption">
+                                            <h5>Tiny home in San Diego</h5>
+                                            <p>$ 740,000.00 USD</p>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="carousel-item"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#Modal">
+                                        <img
+                                            src="./assets/images/main_block5_houses_in_your_fav_area/img_crown_house.png"
+                                            class="d-block w-100"
+                                            alt="house in New-York"
+                                            />
+                                        <div class="carousel-caption">
+                                            <h5>Crown house in New York</h5>
+                                            <p>$ 980,000.00 USD</p>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="carousel-item"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#Modal">
+                                        <img
+                                            src="./assets/images/main_block5_houses_in_your_fav_area/img_family_house_la.png"
+                                            class="d-block w-100"
+                                            alt="house in Los Angeles"
+                                        />
+                                        <div class="carousel-caption">
+                                            <h5>Family house in Los Angeles</h5>
+                                            <p>$ 4,200.00 USD</p>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="carousel-item"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#Modal">
+                                        <img
+                                            src="./assets/images/main_block5_houses_in_your_fav_area/img_studio_lv.png"
+                                            class="d-block w-100"
+                                            alt="house in Las Vegas"
+                                        />
+                                        <div class="carousel-caption d-md-block">
+                                            <h5>Studio in Las Vegas</h5>
+                                            <p>$ 820,000.00 USD</p>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="carousel-item"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#Modal">
+                                        <img
+                                            src="./assets/images/main_block5_houses_in_your_fav_area/img_sd.png"
+                                            class="d-block w-100"
+                                            alt="house in San Diego"
+                                        />
+                                        <div class="carousel-caption">
+                                            <h5>San Diego story</h5>
+                                            <p>$ 3,700.00 USD</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button
+                                    class="carousel-control-prev"
+                                    type="button"
+                                    data-bs-target="#carouselExampleCaptions"
+                                    data-bs-slide="prev">
+                                    <span
+                                        class="carousel-control-prev-icon"
+                                        aria-hidden="true">
+                                    </span>
+                                    <span class="visually-hidden">
+                                        Previous
+                                    </span>
+                                </button>
+                                <button
+                                    class="carousel-control-next"
+                                    type="button"
+                                    data-bs-target="#carouselExampleCaptions"
+                                    data-bs-slide="next">
+                                    <span
+                                        class="carousel-control-next-icon"
+                                        aria-hidden="true">
+                                    </span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+
+                        <!-- Модальное окно №1 - для разных вариантов домов-->
+                            <div
+                                class="modal fade"
+                                id="Modal"
+                                tabindex="-1"
+                                role="dialog"
+                                aria-labelledby="contactModalLabel"
+                                aria-hidden="true"
+                            >
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="contactModalLabel">
+                                                If you like this type of house, leave your contacts
+                                                below:
+                                            </h5>
+                                            <button
+                                                type="button"
+                                                class="btn-close"
+                                                data-bs-dismiss="modal"
+                                                aria-label="Close">
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="form-group mb-3">
+                                                    <label for="name" class="col-form-label">
+                                                        Full Name
+                                                    </label>
+                                                    <input
+                                                        type="text"
+                                                        class="form-control"
+                                                        id="name"
+                                                        placeholder="Enter your name"
+                                                    />
+                                                </div>
+                                                <div class="form-group mb-3">
+                                                    <label for="email" class="col-form-label">
+                                                        Contact Email Address
+                                                    </label>
+                                                    <input
+                                                        type="email"
+                                                        class="form-control"
+                                                        id="email"
+                                                        placeholder="Enter your email"
+                                                    />
+                                                </div>
+                                                <div class="form-group mb-3">
+                                                    <label for="phone" class="col-form-label">
+                                                        Phone Number
+                                                    </label>
+                                                    <input
+                                                        type="tel"
+                                                        class="form-control"
+                                                        id="phone"
+                                                        placeholder="555-555-555"
+                                                    />
+                                                </div>
+                                                <button
+                                                    type="submit"
+                                                    class="btn btn-light px-3 py-3 shadow rounded border">
+                                                    Submit Form
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid-item_main-block3-explore_properties">
+                                <div class="d-flex gap-3 justify-content-center">
+                                    <button
+                                        type="button"
+                                        class="btn btn-light px-3 py-3 shadow-sm">
+                                        Explore properties
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn px-3 py-3"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#Modal-2">
+                                        Contact agent >
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Модальное окно №2 - для Contact agent-->
+                            <div
+                                class="modal fade"
+                                id="Modal-2"
+                                tabindex="-1"
+                                role="dialog"
+                                aria-labelledby="contactModalLabel"
+                                aria-hidden="true"
+                            >
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="contactModalLabel">
+                                                Leave your contact information below and our agent will
+                                                contact you in the nearest possible time!
+                                            </h5>
+                                            <button
+                                                type="button"
+                                                class="btn-close"
+                                                data-bs-dismiss="modal"
+                                                aria-label="Close">
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="form-group mb-3">
+                                                    <label for="name" class="col-form-label">
+                                                        Full Name
+                                                    </label>
+                                                    <input
+                                                        type="text"
+                                                        class="form-control"
+                                                        id="name"
+                                                        placeholder="Enter your name"
+                                                    />
+                                                </div>
+                                                <div class="form-group mb-3">
+                                                    <label for="email" class="col-form-label">
+                                                        Contact Email Address
+                                                    </label>
+                                                    <input
+                                                        type="email"
+                                                        class="form-control"
+                                                        id="email"
+                                                        placeholder="Enter your email"
+                                                    />
+                                                </div>
+                                                <div class="form-group mb-3">
+                                                    <label for="phone" class="col-form-label">
+                                                        Phone Number
+                                                    </label>
+                                                    <input
+                                                        type="tel"
+                                                        class="form-control"
+                                                        id="phone"
+                                                        placeholder="555-555-555"
+                                                    />
+                                                </div>
+                                                <button
+                                                    type="submit"
+                                                    class="btn btn-light px-3 py-3 shadow rounded border">
+                                                    Submit Form
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid-item_main-block3-stairs_left">
+                                <img
+                                src="./assets/images/main_block5_houses_in_your_fav_area/vector_stairs_down.svg"
+                                alt="stairs down"
+                                />
+                            </div>
                         </div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+                    </div>
 
-          <div class="grid-item_main-block5">
-            <div class="main-block5_Latest-posts">
-              <div class="main-block5_Latest-posts-subtitle">Blog</div>
-              <h2 class="main-block5_Latest-posts-title">Latest posts</h2>
-              <div class="main-block5_Latest-posts-desc-wrap">
-                <div class="main-block5_Latest-posts-desc">
-                  Vestibulum ante ipsum primis in faucibus orci luctus et
-                  ultrices posuere cubilia curae. Praesent efficitur nibh massa
-                  morbi sagittis ornare dui in ornare.
-                </div>
-                <form class="main-block5_Latest-posts-form">
-                  <button class="main-block5_Latest-posts-form-button">
-                    View all
-                  </button>
-                </form>
-              </div>
-              <div class="main-block5_Latest-posts-section-wrap">
-                <div class="main-block5_Latest-posts-section">
-                  <img
-                    src="assets/images/main-block9-Latest posts/img-room-The-9-best-homes.png"
-                    alt="room"
-                    class="main-block5_Latest-posts-section-image"
-                  />
-                  <div class="main-block5_Latest-posts-section-wrap2">
-                    <div class="main-block5_Latest-posts-section-subtitle">
-                      Trends
-                    </div>
-                    <div class="main-block5_Latest-posts-section-data">
-                      May 10, 2022
-                    </div>
-                  </div>
-                  <div class="main-block5_Latest-posts-section-title">
-                    The 9 best homes in New York
-                  </div>
-                  <div class="main-block5_Latest-posts-section-desc">
-                    Integer tincidunt rutrum faucibus. Proin sit amet varius
-                    arcu. Aliquam vel leo augue donec.
-                  </div>
-                  <form class="main-block5_Latest-posts-section-form">
-                    <button
-                      class="main-block5_Latest-posts-section-form-button"
-                    >
-                      Read more >
-                    </button>
-                  </form>
-                </div>
-                <div class="main-block5_Latest-posts-section">
-                  <img
-                    src="assets/images/main-block9-Latest posts/img-room-How-to-easily-buy.png"
-                    alt="room"
-                    class="main-block5_Latest-posts-section-image"
-                  />
-                  <div class="main-block5_Latest-posts-section-wrap2">
-                    <div class="main-block5_Latest-posts-section-subtitle2">
-                      DIY
-                    </div>
-                    <div class="main-block5_Latest-posts-section-data">
-                      May 10, 2022
-                    </div>
-                  </div>
-                  <div class="main-block5_Latest-posts-section-title">
-                    How to easily buy a house with Realco
-                  </div>
-                  <div class="main-block5_Latest-posts-section-desc">
-                    Praesent nec felis nisl. Phasellus eget lacus a metus
-                    fringilla fermentum sit amet.
-                  </div>
-                  <form class="main-block5_Latest-posts-section-form2">
-                    <button
-                      class="main-block5_Latest-posts-section-form-button2"
-                    >
-                      Read more >
-                    </button>
-                  </form>
-                </div>
-                <div class="main-block5_Latest-posts-section">
-                  <img
-                    src="assets/images/main-block9-Latest posts/img-room-Renting-houses.png"
-                    alt="room"
-                    class="main-block5_Latest-posts-section-image"
-                  />
-                  <div class="main-block5_Latest-posts-section-wrap2">
-                    <div class="main-block5_Latest-posts-section-subtitle2">
-                      DIY
-                    </div>
-                    <div class="main-block5_Latest-posts-section-data">
-                      May 10,2022
-                    </div>
-                  </div>
-                  <div class="main-block5_Latest-posts-section-title">
-                    Renting houses - complete guide
-                  </div>
-                  <div class="main-block5_Latest-posts-section-desc">
-                    Nunc in bibendum leo, gravida scelerisque quam nulla
-                    interdum tellus a turpis.
-                  </div>
-                  <form class="main-block5_Latest-posts-section-form2">
-                    <button
-                      class="main-block5_Latest-posts-section-form-button2"
-                    >
-                      Read more >
-                    </button>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </main>
-      </div>
+                    <div class="grid-item_main-block4">
+                        <div class="grid-container_main-block4_information-and-reviews">
+                            <div class="grid-item_main-block4-Locations">
+                                <div class="flex-container_main-block4-Locations">
+                                    <h2 class="text-title">
+                                        Locations
+                                    </h2>
+                                    <p class="grid-item_main-block4-Locations_text">
+                                        Nunc mi ante, fringilla eget iaculis et, maximus vel purus
+                                        integer lacus urna, aliquet non
+                                        <br>
+                                        nisl sit amet.
+                                    </p>
+                                    <div class="grid-item_main-block4-Locations-card">
+                                        <div>
+                                            <p class="grid-item_main-block4-Locations-card_tittle">
+                                                San Francisco, CA
+                                            </p>
+                                            <form class="grid-item_main-block4-Fast-Locations-form">
+                                                <button
+                                                    type="button"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#Modal-2"
+                                                    class="grid-item_main-block4-Fast-Locations-form-button">
+                                                    View Properties >
+                                                </button>
+                                            </form>
+                                        </div>
 
-      <div class="grid-item_body-footer" id="Contact">
-        <footer class="footer">
-          <div class="footer-container">
-            <div class="footer-content">
-              <div class="logo">
-                <img src="./assets/images/footer/logo-orange.svg" alt="logo" />
-                <h4 class="logo_text">
-                  <a href="#">Realco</a>
-                </h4>
-              </div>
-              <div class="footer-links-col">
-                <ul class="footer-list">
-                  <li>
-                    <a class="footer-list-link" href="#"><b>Pages</b></a>
-                  </li>
-                  <li><a class="footer-list-link" href="#">Home</a></li>
-                  <li><a class="footer-list-link" href="#">About</a></li>
-                  <li><a class="footer-list-link" href="#">Blog</a></li>
-                  <li><a class="footer-list-link" href="#">Agents</a></li>
-                  <li><a class="footer-list-link" href="#">Contact</a></li>
-                  <li><a class="footer-list-link" href="#">FAQs</a></li>
-                  <li><a class="footer-list-link" href="#">Properties</a></li>
-                </ul>
-                <ul class="footer-list">
-                  <li>
-                    <a class="footer-list-link" href="#"><b>CMS Pages</b></a>
-                  </li>
-                  <li><a class="footer-list-link" href="#">Property</a></li>
-                  <li>
-                    <a class="footer-list-link" href="#">Property Single</a>
-                  </li>
-                  <li>
-                    <a class="footer-list-link" href="#">Blog Categories</a>
-                  </li>
-                  <li><a class="footer-list-link" href="#">Blog Single</a></li>
-                  <li><a class="footer-list-link" href="#">Agent Single</a></li>
-                </ul>
-                <ul class="footer-list">
-                  <li>
-                    <a class="footer-list-link" href="#"
-                      ><b>Utility Pages</b></a
-                    >
-                  </li>
-                  <li><a class="footer-list-link" href="#">Style Guide</a></li>
-                  <li><a class="footer-list-link" href="#">Changelog</a></li>
-                  <li><a class="footer-list-link" href="#">Licenses</a></li>
-                  <li><a class="footer-list-link" href="#">404</a></li>
-                  <li><a class="footer-list-link" href="#">Password</a></li>
-                  <li><a class="footer-list-link" href="#">Search</a></li>
-                </ul>
-              </div>
+                                        <div>
+                                            <p class="grid-item_main-block4-Locations-card_tittle">
+                                                Los Angeles, CA
+                                            </p>
+                                            <form class="grid-item_main-block4-Fast-Locations-form">
+                                                <button
+                                                    type="button"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#Modal-2"
+                                                    class="grid-item_main-block4-Fast-Locations-form-button">
+                                                    View Properties >
+                                                </button>
+                                            </form>
+                                        </div>
+
+                                        <div>
+                                            <p class="grid-item_main-block4-Locations-card_tittle">
+                                                San Diego, CA
+                                            </p>
+                                            <form class="grid-item_main-block4-Fast-Locations-form">
+                                                <button
+                                                    type="button"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#Modal-2"
+                                                    class="grid-item_main-block4-Fast-Locations-form-button">
+                                                    View Properties >
+                                                </button>
+                                            </form>
+                                        </div>
+
+                                        <div>
+                                            <p class="grid-item_main-block4-Locations-card_tittle">
+                                                New York, NY
+                                            </p>
+                                            <form class="grid-item_main-block4-Fast-Locations-form">
+                                                <button
+                                                    type="button"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#Modal-2"
+                                                    class="grid-item_main-block4-Fast-Locations-form-button">
+                                                    View Properties >
+                                                </button>
+                                            </form>
+                                        </div>
+
+                                        <div>
+                                            <p class="grid-item_main-block4-Locations-card_tittle">
+                                                Las Vegas, NV
+                                            </p>
+                                            <form class="grid-item_main-block4-Fast-Locations-form">
+                                                <button
+                                                    type="button"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#Modal-2"
+                                                    class="grid-item_main-block4-Fast-Locations-form-button">
+                                                    View Properties >
+                                                </button>
+                                            </form>
+                                        </div>
+
+                                        <div>
+                                            <p class="grid-item_main-block4-Locations-card_tittle">
+                                                Miami, FL
+                                            </p>
+                                            <form class="grid-item_main-block4-Fast-Locations-form">
+                                                <button
+                                                    type="button"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#Modal-2"
+                                                    class="grid-item_main-block4-Fast-Locations-form-button">
+                                                    View Properties >
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex gap-3 justify-content-center">
+                                        <button
+                                        type="button"
+                                        class="btn btn-light px-3 py-3 shadow-sm">
+                                        Explore properties
+                                        </button>
+                                        <button
+                                        type="button"
+                                        class="btn px-3 py-3"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#Modal-2">
+                                        Contact agent >
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid-item_main-block4-Families">
+                                <div class="flex-container_main-block4-Families">
+                                    <div class="grid-item_main-block4-Families-img">
+                                        <img
+                                            src="./assets/images/main_block7_families_are/frame_family_svg.svg"
+                                            alt="families icon"
+                                        />
+                                    </div>
+                                    <div>
+                                        <h2 class="text-title" id="text-title-families">
+                                            Families are our priority
+                                        </h2>
+                                        <p class="grid-item_main-block4-families_text">
+                                            Curabitur eget aliquam elit. In mauris purus, auctor a
+                                            eleifend non, placerat vel arcu. In non
+                                            <br />
+                                            consectetur lorem. Morbi non varius sapien suscipit mauri.
+                                        </p>
+                                    </div>
+                                    <form action="get">
+                                        <button class="orande_button" id="families_button">
+                                            Get started
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="grid-item_main-block4-What">
+                                <div class="grid-container_main-block4-What">
+                                    <div class="grid-item_main-block4-What-title rounded-3">
+                                        <h2 class="text-title">
+                                            What customers say
+                                        </h2>
+                                        <p class="text-under-h2">
+                                            Faucibus orci luctus et ultrices posuere cubilia curae.
+                                        </p>
+                                    </div>
+
+                                    <div class="grid-item_main-block4-What-card1">
+                                        <a href="#" class="text-decoration-none">
+                                            <div class="card rounded-3 shadow-lg">
+                                                <div class="card-body mt-2">
+                                                    <img
+                                                        src="./assets/images/main_block8_what_customers/frame_stars.svg"
+                                                        alt="5 stars (evaluation of the service)"
+                                                        class="mb-4"
+                                                    />
+
+                                                    <p class="card-text mb-4">
+                                                        "Aliquam erat volutpat. Nulla pretium nec urna et
+                                                        convallis. Ut varius mi lacus, nec molestie libero
+                                                        ultricies nec. Aenean lacinia dui elit, ut gravida
+                                                        quam."
+                                                    </p>
+                                                    <div class="d-flex gap-3">
+                                                        <div>
+                                                            <img
+                                                                src="./assets/images/main_block8_what_customers/img_boy.png"
+                                                                alt="client's photo"
+                                                            />
+                                                        </div>
+                                                        <div>
+                                                            <p class="mb-0">
+                                                                <b>Michael Webb</b>
+                                                            </p>
+                                                            <p class="main-block4-card-customer">
+                                                                Customer
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="grid-item_main-block4-What-card2">
+                                        <a href="#" class="text-decoration-none">
+                                            <div class="card rounded-3 shadow-lg">
+                                                <div class="card-body mt-2">
+                                                    <img
+                                                        src="./assets/images/main_block8_what_customers/frame_stars.svg"
+                                                        alt="5 stars (evaluation of the service)"
+                                                        class="mb-4"
+                                                    />
+
+                                                    <p class="card-text mb-4">
+                                                        "Class aptent taciti sociosqu ad litora
+                                                        <br>
+                                                        torquent per conubia nostra, per
+                                                        <br>
+                                                        inceptos himenaeos. Morbi pretium iaculis ultricies.
+                                                        Aenean in leo vitae tortor."
+                                                    </p>
+                                                    <div class="d-flex gap-3">
+                                                        <div>
+                                                            <img
+                                                                src="./assets/images/main_block8_what_customers/img_woman_center.png"
+                                                                alt="second client's photo"
+                                                            />
+                                                        </div>
+                                                        <div>
+                                                            <p class="mb-0">
+                                                                <b>Amber Keene</b>
+                                                            </p>
+                                                            <p class="main-block4-card-customer">
+                                                                Customer
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="grid-item_main-block4-What-card3">
+                                        <a href="#" class="text-decoration-none">
+                                            <div class="card rounded-3 shadow-lg">
+                                                <div class="card-body mt-2">
+                                                    <img
+                                                        src="./assets/images/main_block8_what_customers/frame_stars.svg"
+                                                        alt="5 stars (evaluation of the service)"
+                                                        class="mb-4"
+                                                    />
+
+                                                    <p class="card-text mb-4">
+                                                        "Condimentum viverra orci. Pellentesque suscipit
+                                                        odio nisl, non ultricies purus mattis eget. In
+                                                        placerat, lorem a sodales ullamcorper, eros nibh
+                                                        laoreet nisl."
+                                                    </p>
+                                                    <div class="d-flex gap-3">
+                                                        <div>
+                                                            <img
+                                                                src="./assets/images/main_block8_what_customers/img_woman_right.png"
+                                                                alt="thirdclient's photo"
+                                                            />
+                                                        </div>
+                                                        <div>
+                                                            <p class="mb-0">
+                                                                <b>Sarah Tarleton</b>
+                                                            </p>
+                                                            <p class="main-block4-card-customer">
+                                                                Customer
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-item_main-block5">
+                        <div class="main-block5_Latest-posts">
+                            <div class="main-block5_Latest-posts-subtitle">
+                                Blog
+                            </div>
+                            <h2 class="main-block5_Latest-posts-title">
+                                Latest posts
+                            </h2>
+                            <div class="main-block5_Latest-posts-desc-wrap">
+                                <div class="main-block5_Latest-posts-desc">
+                                    Vestibulum ante ipsum primis in faucibus orci luctus et
+                                    ultrices posuere cubilia curae. Praesent efficitur nibh massa
+                                    morbi sagittis ornare dui in ornare.
+                                </div>
+                                <form class="main-block5_Latest-posts-form">
+                                    <button class="main-block5_Latest-posts-form-button">
+                                        View all
+                                    </button>
+                                </form>
+                            </div>
+                            <div class="main-block5_Latest-posts-section-wrap">
+                                <div class="main-block5_Latest-posts-section">
+                                    <img
+                                        src="./assets/images/main_block9_latest_posts/img_room_the9_best.png"
+                                        alt="room"
+                                        class="main-block5_Latest-posts-section-image"
+                                    />
+                                    <div class="main-block5_Latest-posts-section-wrap2">
+                                        <div class="main-block5_Latest-posts-section-subtitle">
+                                            Trends
+                                        </div>
+                                        <div class="main-block5_Latest-posts-section-data">
+                                            May 10, 2022
+                                        </div>
+                                    </div>
+                                    <div class="main-block5_Latest-posts-section-title">
+                                        The 9 best homes in New York
+                                    </div>
+                                    <div class="main-block5_Latest-posts-section-desc">
+                                        Integer tincidunt rutrum faucibus. Proin sit amet varius
+                                        arcu. Aliquam vel leo augue donec.
+                                    </div>
+                                    <form class="main-block5_Latest-posts-section-form">
+                                        <button
+                                            class="main-block5_Latest-posts-section-form-button">
+                                            Read more >
+                                        </button>
+                                    </form>
+                                </div>
+                                <div class="main-block5_Latest-posts-section">
+                                    <img
+                                        src="./assets/images/main_block9_latest_posts/img_room_how_to.png"
+                                        alt="room"
+                                        class="main-block5_Latest-posts-section-image"
+                                    />
+                                    <div class="main-block5_Latest-posts-section-wrap2">
+                                        <div class="main-block5_Latest-posts-section-subtitle2">
+                                            DIY
+                                        </div>
+                                        <div class="main-block5_Latest-posts-section-data">
+                                            May 10, 2022
+                                        </div>
+                                    </div>
+                                    <div class="main-block5_Latest-posts-section-title">
+                                        How to easily buy a house with Realco
+                                    </div>
+                                    <div class="main-block5_Latest-posts-section-desc">
+                                        Praesent nec felis nisl. Phasellus eget lacus a metus
+                                        fringilla fermentum sit amet.
+                                    </div>
+                                    <form class="main-block5_Latest-posts-section-form2">
+                                        <button class="main-block5_Latest-posts-section-form-button2">
+                                            Read more >
+                                        </button>
+                                    </form>
+                                </div>
+                                <div class="main-block5_Latest-posts-section">
+                                    <img
+                                        src="./assets/images/main_block9_latest_posts/img_room_renting_houses.png"
+                                        alt="room"
+                                        class="main-block5_Latest-posts-section-image"
+                                    />
+                                    <div class="main-block5_Latest-posts-section-wrap2">
+                                        <div class="main-block5_Latest-posts-section-subtitle2">
+                                            DIY
+                                        </div>
+                                        <div class="main-block5_Latest-posts-section-data">
+                                            May 10,2022
+                                        </div>
+                                    </div>
+                                    <div class="main-block5_Latest-posts-section-title">
+                                        Renting houses - complete guide
+                                    </div>
+                                    <div class="main-block5_Latest-posts-section-desc">
+                                        Nunc in bibendum leo, gravida scelerisque quam nulla
+                                        interdum tellus a turpis.
+                                    </div>
+                                    <form class="main-block5_Latest-posts-section-form2">
+                                        <button
+                                        class="main-block5_Latest-posts-section-form-button2">
+                                        Read more >
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
             </div>
-            <div class="footer-subscribe">
-              <h5 class="footer-subscribe-title">
-                <b>Subscribe</b>
-              </h5>
-              <p class="footer-subscribe-text">
-                Join our newsletter to stay up to date on features and
-                <br />
-                releases.
-              </p>
-              <form class="footer_subscribe-form">
-                <label>
-                  <input type="text" placeholder="Enter your email" />
-                </label>
-                <input type="submit" value="Subscribe" />
-              </form>
-              <p class="footer-subscribe-subtext">
-                <a class="footer-subscribe-link" href="#">
-                  By subscribing you agree to with our
-                </a>
-                <a class="footer-subscribe-link" href="#"> Privacy Policy </a>
-              </p>
+
+            <div class="grid-item_body-footer" id="Contact">
+                <footer class="footer">
+                    <div class="footer-container">
+                        <div class="footer-content">
+                            <div class="logo">
+                                <img src="./assets/images/footer/logo_orange.svg" alt="logo" />
+                                <h4 class="logo_text"><a href="#">Realco</a></h4>
+                            </div>
+                            <div class="footer-links-col">
+                                <ul class="footer-list">
+                                    <li><a class="footer-list-link" href="#"><b>Pages</b></a></li>
+                                    <li><a class="footer-list-link" href="#">Home</a></li>
+                                    <li><a class="footer-list-link" href="#">About</a></li>
+                                    <li><a class="footer-list-link" href="#">Blog</a></li>
+                                    <li><a class="footer-list-link" href="#">Agents</a></li>
+                                    <li><a class="footer-list-link" href="#">Contact</a></li>
+                                    <li><a class="footer-list-link" href="#">FAQs</a></li>
+                                    <li><a class="footer-list-link" href="#">Properties</a></li>
+                                </ul>
+                                <ul class="footer-list">
+                                    <li><a class="footer-list-link" href="#"><b>CMS Pages</b></a></li>
+                                    <li><a class="footer-list-link" href="#">Property</a></li>
+                                    <li><a class="footer-list-link" href="#">Property Single</a></li>
+                                    <li><a class="footer-list-link" href="#">Blog Categories</a></li>
+                                    <li><a class="footer-list-link" href="#">Blog Single</a></li>
+                                    <li><a class="footer-list-link" href="#">Agent Single</a></li>
+                                </ul>
+                                <ul class="footer-list">
+                                    <li><a class="footer-list-link" href="#"><b>Utility Pages</b></a></li>
+                                    <li><a class="footer-list-link" href="#">Style Guide</a></li>
+                                    <li><a class="footer-list-link" href="#">Changelog</a></li>
+                                    <li><a class="footer-list-link" href="#">Licenses</a></li>
+                                    <li><a class="footer-list-link" href="#">404</a></li>
+                                    <li><a class="footer-list-link" href="#">Password</a></li>
+                                    <li><a class="footer-list-link" href="#">Search</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer-subscribe">
+                            <h5 class="footer-subscribe-title">
+                                <b>Subscribe</b>
+                            </h5>
+                            <p class="footer-subscribe-text">
+                                Join our newsletter to stay up to date on features and
+                                <br>
+                                releases.
+                            </p>
+                            <form class="footer_subscribe-form">
+                                <label>
+                                <input type="text" placeholder="Enter your email" />
+                                </label>
+                                <input type="submit" value="Subscribe" />
+                            </form>
+                            <p class="footer-subscribe-subtext">
+                                <a class="footer-subscribe-link" href="#">
+                                By subscribing you agree to with our
+                                </a>
+                                <a class="footer-subscribe-link" href="#"> Privacy Policy </a>
+                            </p>
+                        </div>
+                    </div>
+                </footer>
+                <div class="sub-footer">
+                    <div class="sub-footer__container">
+                        <p class="sub-footer__copyright">
+                            © Realco by Minimal Square
+                        </p>
+                        <div class="sub-footer__socs">
+                            <a href="https://www.facebook.com/" class="sub-footer__socs-icon">
+                                <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.5 6H13.5C12.9477 6 12.5 6.44772 12.5 7V10H16.5C16.6137 9.99748 16.7216 10.0504 16.7892 10.1419C16.8568 10.2334 16.8758 10.352 16.84 10.46L16.1 12.66C16.0318 12.8619 15.8431 12.9984 15.63 13H12.5V20.5C12.5 20.7761 12.2761 21 12 21H9.5C9.22386 21 9 20.7761 9 20.5V13H7.5C7.22386 13 7 12.7761 7 12.5V10.5C7 10.2239 7.22386 10 7.5 10H9V7C9 4.79086 10.7909 3 13 3H16.5C16.7761 3 17 3.22386 17 3.5V5.5C17 5.77614 16.7761 6 16.5 6Z"
+                                        fill="#2A2C1F"/>
+                                </svg>
+                            </a>
+                            <a
+                                href="https://www.instagram.com/"
+                                class="sub-footer__socs-icon">
+                                <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M16 3H8C5.23858 3 3 5.23858 3 8V16C3 18.7614 5.23858 21 8 21H16C18.7614 21 21 18.7614 21 16V8C21 5.23858 18.7614 3 16 3ZM19.25 16C19.2445 17.7926 17.7926 19.2445 16 19.25H8C6.20735 19.2445 4.75549 17.7926 4.75 16V8C4.75549 6.20735 6.20735 4.75549 8 4.75H16C17.7926 4.75549 19.2445 6.20735 19.25 8V16ZM16.75 8.25C17.3023 8.25 17.75 7.80228 17.75 7.25C17.75 6.69772 17.3023 6.25 16.75 6.25C16.1977 6.25 15.75 6.69772 15.75 7.25C15.75 7.80228 16.1977 8.25 16.75 8.25ZM12 7.5C9.51472 7.5 7.5 9.51472 7.5 12C7.5 14.4853 9.51472 16.5 12 16.5C14.4853 16.5 16.5 14.4853 16.5 12C16.5027 10.8057 16.0294 9.65957 15.1849 8.81508C14.3404 7.97059 13.1943 7.49734 12 7.5ZM9.25 12C9.25 13.5188 10.4812 14.75 12 14.75C13.5188 14.75 14.75 13.5188 14.75 12C14.75 10.4812 13.5188 9.25 12 9.25C10.4812 9.25 9.25 10.4812 9.25 12Z"
+                                        fill="#2A2C1F"/>
+                                </svg>
+                            </a>
+                            <a href="https://www.twitter.com/" class="sub-footer__socs-icon">
+                                <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.9727 6.7174C20.5083 7.33692 19.9469 7.87733 19.3102 8.31776C19.3102 8.47959 19.3102 8.64142 19.3102 8.81225C19.3153 11.7511 18.1414 14.5691 16.0517 16.6345C13.9619 18.6999 11.1311 19.8399 8.19393 19.7989C6.49587 19.8046 4.81955 19.4169 3.2963 18.6661C3.21416 18.6302 3.16119 18.549 3.1615 18.4593V18.3604C3.1615 18.2313 3.26611 18.1267 3.39515 18.1267C5.0643 18.0716 6.6739 17.4929 7.99622 16.4724C6.48541 16.4419 5.12607 15.5469 4.50048 14.1707C4.46889 14.0956 4.47872 14.0093 4.52645 13.9432C4.57417 13.8771 4.65288 13.8407 4.73413 13.8471C5.1933 13.8932 5.65706 13.8505 6.10008 13.7212C4.43227 13.375 3.17909 11.9904 2.99974 10.2957C2.99337 10.2144 3.0298 10.1357 3.09588 10.0879C3.16195 10.0402 3.24812 10.0303 3.32326 10.062C3.77082 10.2595 4.25397 10.3635 4.74312 10.3676C3.28172 9.40846 2.65049 7.58405 3.20643 5.92622C3.26382 5.76513 3.40169 5.64612 3.56938 5.61294C3.73706 5.57975 3.90984 5.63728 4.0242 5.76439C5.99627 7.86325 8.70592 9.11396 11.5818 9.25279C11.5082 8.95885 11.472 8.65676 11.474 8.35372C11.5009 6.76472 12.4841 5.34921 13.9633 4.76987C15.4424 4.19054 17.1248 4.56203 18.2229 5.71044C18.9713 5.56785 19.6949 5.31645 20.3706 4.96421C20.4201 4.93331 20.4829 4.93331 20.5324 4.96421C20.5633 5.01373 20.5633 5.07652 20.5324 5.12604C20.2051 5.87552 19.6522 6.50412 18.9508 6.92419C19.565 6.85296 20.1684 6.70807 20.7481 6.49264C20.7969 6.45942 20.861 6.45942 20.9098 6.49264C20.9507 6.51134 20.9813 6.54711 20.9934 6.59042C21.0055 6.63373 20.9979 6.68018 20.9727 6.7174Z"
+                                        fill="#2A2C1F"/>
+                                </svg>
+                            </a>
+                            <a href="https://www.linkedin.com/" class="sub-footer__socs-icon">
+                                <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M5 3H19C20.1046 3 21 3.89543 21 5V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V5C3 3.89543 3.89543 3 5 3ZM8 18C8.27614 18 8.5 17.7761 8.5 17.5V10.5C8.5 10.2239 8.27614 10 8 10H6.5C6.22386 10 6 10.2239 6 10.5V17.5C6 17.7761 6.22386 18 6.5 18H8ZM7.25 9C6.42157 9 5.75 8.32843 5.75 7.5C5.75 6.67157 6.42157 6 7.25 6C8.07843 6 8.75 6.67157 8.75 7.5C8.75 8.32843 8.07843 9 7.25 9ZM17.5 18C17.7761 18 18 17.7761 18 17.5V12.9C18.0325 11.3108 16.8576 9.95452 15.28 9.76C14.177 9.65925 13.1083 10.1744 12.5 11.1V10.5C12.5 10.2239 12.2761 10 12 10H10.5C10.2239 10 10 10.2239 10 10.5V17.5C10 17.7761 10.2239 18 10.5 18H12C12.2761 18 12.5 17.7761 12.5 17.5V13.75C12.5 12.9216 13.1716 12.25 14 12.25C14.8284 12.25 15.5 12.9216 15.5 13.75V17.5C15.5 17.7761 15.7239 18 16 18H17.5Z"
+                                        fill="#2A2C1F"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </footer>
-        <div class="sub-footer">
-          <div class="sub-footer__container">
-            <p class="sub-footer__copyright">© Realco by Minimal Square</p>
-            <div class="sub-footer__socs">
-              <a href="https://www.facebook.com/" class="sub-footer__socs-icon">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M16.5 6H13.5C12.9477 6 12.5 6.44772 12.5 7V10H16.5C16.6137 9.99748 16.7216 10.0504 16.7892 10.1419C16.8568 10.2334 16.8758 10.352 16.84 10.46L16.1 12.66C16.0318 12.8619 15.8431 12.9984 15.63 13H12.5V20.5C12.5 20.7761 12.2761 21 12 21H9.5C9.22386 21 9 20.7761 9 20.5V13H7.5C7.22386 13 7 12.7761 7 12.5V10.5C7 10.2239 7.22386 10 7.5 10H9V7C9 4.79086 10.7909 3 13 3H16.5C16.7761 3 17 3.22386 17 3.5V5.5C17 5.77614 16.7761 6 16.5 6Z"
-                    fill="#2A2C1F"
-                  />
-                </svg>
-              </a>
-              <a
-                href="https://www.instagram.com/"
-                class="sub-footer__socs-icon"
-              >
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M16 3H8C5.23858 3 3 5.23858 3 8V16C3 18.7614 5.23858 21 8 21H16C18.7614 21 21 18.7614 21 16V8C21 5.23858 18.7614 3 16 3ZM19.25 16C19.2445 17.7926 17.7926 19.2445 16 19.25H8C6.20735 19.2445 4.75549 17.7926 4.75 16V8C4.75549 6.20735 6.20735 4.75549 8 4.75H16C17.7926 4.75549 19.2445 6.20735 19.25 8V16ZM16.75 8.25C17.3023 8.25 17.75 7.80228 17.75 7.25C17.75 6.69772 17.3023 6.25 16.75 6.25C16.1977 6.25 15.75 6.69772 15.75 7.25C15.75 7.80228 16.1977 8.25 16.75 8.25ZM12 7.5C9.51472 7.5 7.5 9.51472 7.5 12C7.5 14.4853 9.51472 16.5 12 16.5C14.4853 16.5 16.5 14.4853 16.5 12C16.5027 10.8057 16.0294 9.65957 15.1849 8.81508C14.3404 7.97059 13.1943 7.49734 12 7.5ZM9.25 12C9.25 13.5188 10.4812 14.75 12 14.75C13.5188 14.75 14.75 13.5188 14.75 12C14.75 10.4812 13.5188 9.25 12 9.25C10.4812 9.25 9.25 10.4812 9.25 12Z"
-                    fill="#2A2C1F"
-                  />
-                </svg>
-              </a>
-              <a href="https://www.twitter.com/" class="sub-footer__socs-icon">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M20.9727 6.7174C20.5083 7.33692 19.9469 7.87733 19.3102 8.31776C19.3102 8.47959 19.3102 8.64142 19.3102 8.81225C19.3153 11.7511 18.1414 14.5691 16.0517 16.6345C13.9619 18.6999 11.1311 19.8399 8.19393 19.7989C6.49587 19.8046 4.81955 19.4169 3.2963 18.6661C3.21416 18.6302 3.16119 18.549 3.1615 18.4593V18.3604C3.1615 18.2313 3.26611 18.1267 3.39515 18.1267C5.0643 18.0716 6.6739 17.4929 7.99622 16.4724C6.48541 16.4419 5.12607 15.5469 4.50048 14.1707C4.46889 14.0956 4.47872 14.0093 4.52645 13.9432C4.57417 13.8771 4.65288 13.8407 4.73413 13.8471C5.1933 13.8932 5.65706 13.8505 6.10008 13.7212C4.43227 13.375 3.17909 11.9904 2.99974 10.2957C2.99337 10.2144 3.0298 10.1357 3.09588 10.0879C3.16195 10.0402 3.24812 10.0303 3.32326 10.062C3.77082 10.2595 4.25397 10.3635 4.74312 10.3676C3.28172 9.40846 2.65049 7.58405 3.20643 5.92622C3.26382 5.76513 3.40169 5.64612 3.56938 5.61294C3.73706 5.57975 3.90984 5.63728 4.0242 5.76439C5.99627 7.86325 8.70592 9.11396 11.5818 9.25279C11.5082 8.95885 11.472 8.65676 11.474 8.35372C11.5009 6.76472 12.4841 5.34921 13.9633 4.76987C15.4424 4.19054 17.1248 4.56203 18.2229 5.71044C18.9713 5.56785 19.6949 5.31645 20.3706 4.96421C20.4201 4.93331 20.4829 4.93331 20.5324 4.96421C20.5633 5.01373 20.5633 5.07652 20.5324 5.12604C20.2051 5.87552 19.6522 6.50412 18.9508 6.92419C19.565 6.85296 20.1684 6.70807 20.7481 6.49264C20.7969 6.45942 20.861 6.45942 20.9098 6.49264C20.9507 6.51134 20.9813 6.54711 20.9934 6.59042C21.0055 6.63373 20.9979 6.68018 20.9727 6.7174Z"
-                    fill="#2A2C1F"
-                  />
-                </svg>
-              </a>
-              <a href="https://www.linkedin.com/" class="sub-footer__socs-icon">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M5 3H19C20.1046 3 21 3.89543 21 5V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V5C3 3.89543 3.89543 3 5 3ZM8 18C8.27614 18 8.5 17.7761 8.5 17.5V10.5C8.5 10.2239 8.27614 10 8 10H6.5C6.22386 10 6 10.2239 6 10.5V17.5C6 17.7761 6.22386 18 6.5 18H8ZM7.25 9C6.42157 9 5.75 8.32843 5.75 7.5C5.75 6.67157 6.42157 6 7.25 6C8.07843 6 8.75 6.67157 8.75 7.5C8.75 8.32843 8.07843 9 7.25 9ZM17.5 18C17.7761 18 18 17.7761 18 17.5V12.9C18.0325 11.3108 16.8576 9.95452 15.28 9.76C14.177 9.65925 13.1083 10.1744 12.5 11.1V10.5C12.5 10.2239 12.2761 10 12 10H10.5C10.2239 10 10 10.2239 10 10.5V17.5C10 17.7761 10.2239 18 10.5 18H12C12.2761 18 12.5 17.7761 12.5 17.5V13.75C12.5 12.9216 13.1716 12.25 14 12.25C14.8284 12.25 15.5 12.9216 15.5 13.75V17.5C15.5 17.7761 15.7239 18 16 18H17.5Z"
-                    fill="#2A2C1F"
-                  />
-                </svg>
-              </a>
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous">
+        </script>
+    </body>
 </html>
