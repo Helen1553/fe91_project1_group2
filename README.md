@@ -13,10 +13,20 @@
 ![image](./assets/readme/realco_4.png)
 ![image](./assets/readme/realco_5.png)
 
-* Mobile
+* Mobile <br>
+  
 ![image](./assets/readme/realco_adaptive.png)
+
 ![image](./assets/readme/realco_adaptive2.png)
 ![image](./assets/readme/realco_adaptive3.png)
+
+
+### Команда разработчиков проекта:
+* MariaLukyanova
+* AlenaGorina
+* NadezhdaKov
+* Basulka
+* Helen1553
 
 
 
@@ -53,12 +63,3 @@
   * **Получение изменений из удалённого репозитория**
     * <u>через интерфейс vscode</u>: нажимаем на три точки --> Pull
     * <u>через терминал vscode</u>:  `git pull origin main`
-
-### Команда разработчиков проекта:
-* MariaLukyanova
-* AlenaGorina
-* NadezhdaKov
-* Basulka
-* Helen1553
-
-
