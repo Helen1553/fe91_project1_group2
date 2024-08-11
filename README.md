@@ -3,6 +3,12 @@
 ### Проект выполнен на основе [макета](https://www.figma.com/design/kEVO5l8dmhI80RdChSpAEn/Realco?node-id=0-1) графического редактора Figma
 ### и реализован на базе технологий `html5`, `css3` и фреймворка `bootstrap5`
 ![image](https://tajuso.com/wp-content/uploads/2018/03/udemy3-004.png)
+<br>
+### При написании кода был использован семантический подход к разметке
+<br>
+
+### Сайт интерактивен и удобен для пользователя
+<br>
 
 ### Сайт адаптирован под разные виды устройств (desktop, tablet, mobile):
 
