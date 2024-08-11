@@ -3,7 +3,7 @@
 
     background-color: rgb(238, 238, 231);
 
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .grid-container_body {
@@ -95,7 +95,7 @@
                 box-shadow: 0rem 0.125rem 0.25rem rgba(0, 0, 0, 0.08);
             }
 
-            .cart:hover{
+            .cart:hover {
                 background-color: #d6d2d1;
             }
 
@@ -191,15 +191,15 @@
         }
 
         .main-block1_text-title {
-        font-size: 3.5rem;
-        font-weight: 400;
-        line-height: 4.2rem;
+            font-size: 3.5rem;
+            font-weight: 400;
+            line-height: 4.2rem;
 
-        color: #2a2c1f;
+            color: #2a2c1f;
         }
     }
 
-    .form_dream-place{
+    .form_dream-place {
         display: flex;
         gap: 1rem;
         width: 30rem;
@@ -209,11 +209,11 @@
             width: 60%;
             height: 100%;
 
-            input{
+            input {
                 width: 90%;
                 height: 90%;
 
-                border: solid #d1d2cb;;
+                border: solid #d1d2cb;
                 border-radius: 2%;
             }
         }
@@ -227,7 +227,7 @@
         color: white;
         border: 1px solid #cf6f49;
         border-radius: 6px;
-        
+
         border-radius: 0.375rem;
         cursor: pointer;
     }
@@ -236,7 +236,7 @@
         background-color: #c4c4c1;
         border: 2px solid #cf6f49;
         color: black;
-            }
+    }
 
     .search-f {
         padding-left: 1.5rem;
@@ -1025,7 +1025,7 @@
                 gap: 1rem;
                 margin: 16px 0;
 
-                input[type="text"] {
+                input[type='text'] {
                     font-weight: 400;
                     font-size: 1rem;
                     line-height: 1.5rem;
@@ -1038,7 +1038,7 @@
                     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
                 }
 
-                input[type="submit"] {
+                input[type='submit'] {
                     font-weight: 400;
                     font-size: 1rem;
 
@@ -1049,7 +1049,7 @@
                     border: 0.0625rem solid #cf6f49;
                     border-radius: 0.375rem;
                 }
-                input[type="submit"]:hover{
+                input[type='submit']:hover {
                     background-color: #ffffff;
                     border: 2px solid #cf6f49;
                     color: black;
@@ -1120,26 +1120,71 @@
     .body {
         max-height: 5902px;
 
-        .grid-container_header{
+        .grid-container_header {
             grid-template: 30% 70%/20% 30% 30% 20%;
 
-            .grid-item_sup-header{
+            .grid-item_sup-header {
                 grid-area: 1/1/2/5;
             }
 
-            .header_logo{
+            .header_logo {
                 grid-area: 2/2/3/3;
             }
 
-            .nav{
-                display: none;
+            .nav {
+                position: relative;
+                grid-area: 2/4/3/5;
             }
 
-            .buttons{
+            .buttons {
                 grid-area: 2/3/3/4;
             }
 
             /*вставить бургер меню!! в grid-area: 2/4/3/5;*/
+            .burger-menu {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                width: 30px;
+                height: 30px;
+                cursor: pointer;
+                position: absolute;
+                top: 10px;
+                right: 20px; /* Перемещаем бургер-меню на правую сторону */
+            }
+
+            .line {
+                width: 100%;
+                height: 3px;
+                background-color: #000;
+            }
+
+            .nav_links {
+                display: none;
+                position: absolute;
+                top: 50px;
+                right: 0;
+                background-color: white;
+                flex-direction: column;
+                width: 100%;
+                height: 100%;
+                text-align: right;
+                gap: 1rem;
+            }
+
+            #menu-toggle:checked ~ .nav_links {
+                display: flex;
+            }
+
+            .header-links {
+                margin: 10px 20px;
+            }
+
+            .header-links a {
+                text-decoration: none;
+                color: #000;
+                font-size: 18px;
+            }
         }
 
         .grid-container_body {
@@ -1149,42 +1194,40 @@
                 .grid-item_main-block1 {
                     grid-area: 1/1/2/2;
 
-                    .btn-dream-place_text{
-                        .btn-dream-place{
+                    .btn-dream-place_text {
+                        .btn-dream-place {
                             display: none;
                         }
 
-                        .main-block1_text-title{
+                        .main-block1_text-title {
                             font-size: 3rem;
                         }
 
-                        .main-block1_text{
+                        .main-block1_text {
                             display: none;
                         }
 
-                        .form_dream-place{
+                        .form_dream-place {
                             display: flex;
                             flex-direction: column;
                             align-items: center;
                             margin-top: 3rem;
 
-                            
                             width: 20rem;
                             height: 30rem;
 
                             .search-form {
                                 width: 100%;
                                 height: 50%;
-                                
-                                input{
+
+                                input {
                                     width: 90%;
                                     height: 80%;
                                 }
                             }
-                            
                         }
                     }
-                    .grid-item-block1-stars-down{
+                    .grid-item-block1-stars-down {
                         display: none;
                     }
                 }
@@ -1320,43 +1363,43 @@
                         grid-template: 5% 6% 2% 24% 2% 24% 2% 24% 3% 3% 5%/12% 24% 13% 2% 13% 24% 12%;
 
                         .grid-item_main-block3-stairs_right {
-                        grid-area: 1/7/2/8;
+                            grid-area: 1/7/2/8;
                         }
 
                         .grid-item_main-block3-properties {
-                        grid-area: 2/2/3/7;
+                            grid-area: 2/2/3/7;
                         }
 
                         .grid-item_main-block3-card1 {
-                        grid-area: 4/2/5/4;
+                            grid-area: 4/2/5/4;
                         }
 
                         .grid-item_main-block3-card2 {
-                        grid-area: 4/5/5/7;
+                            grid-area: 4/5/5/7;
                         }
 
                         .grid-item_main-block3-card3 {
-                        grid-area: 6/2/7/4;
+                            grid-area: 6/2/7/4;
                         }
 
                         .grid-item_main-block3-card4 {
-                        grid-area: 6/5/7/7;
+                            grid-area: 6/5/7/7;
                         }
 
                         .grid-item_main-block3-card5 {
-                        grid-area: 8/2/9/4;
+                            grid-area: 8/2/9/4;
                         }
 
                         .grid-item_main-block3-card6 {
-                        grid-area: 8/5/9/7;
+                            grid-area: 8/5/9/7;
                         }
 
                         .grid-item_main-block3-explore_properties {
-                        grid-area: 10/2/11/7;
+                            grid-area: 10/2/11/7;
                         }
 
                         .grid-item_main-block3-stairs_left {
-                        grid-area: 11/1/12/2;
+                            grid-area: 11/1/12/2;
                         }
                     }
                 }
@@ -1378,7 +1421,7 @@
                                 margin-bottom: 2rem;
 
                                 div {
-                                width: 45%;
+                                    width: 45%;
                                 }
                             }
 
@@ -1464,7 +1507,7 @@
                     background-position: center;
                     background-size: cover;
                     -o-background-size: cover;
-                    background-size: cover; 
+                    background-size: cover;
                     box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.5);
 
                     height: 100%;
@@ -1478,7 +1521,7 @@
                     }
 
                     .nav {
-                        grid-area: 1/4/2/5
+                        grid-area: 1/4/2/5;
                     }
 
                     .burger-menu {
@@ -1640,7 +1683,8 @@
                                 align-items: center;
 
                                 background-image: url(../images/main_block3_the_best_houses/img_room.png);
-                                box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.5);
+                                box-shadow: inset 0 0 0 1000px
+                                    rgba(255, 255, 255, 0.5);
                                 background-repeat: no-repeat;
                                 background-position: center;
                                 background-size: cover;
@@ -1704,7 +1748,8 @@
                                 padding-top: 10vh;
 
                                 background-image: url(../images/main_block4_fast_forward_process/img_room.png);
-                                box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.5);
+                                box-shadow: inset 0 0 0 1000px
+                                    rgba(255, 255, 255, 0.5);
                                 background-repeat: no-repeat;
                                 background-position: center;
                                 background-size: cover;
@@ -1836,7 +1881,8 @@
 
                                 .carousel-caption {
                                     color: #ffffff;
-                                    text-shadow: 10px 10px 10px rgb(0, 0, 0, 0.9);
+                                    text-shadow: 10px 10px 10px
+                                        rgb(0, 0, 0, 0.9);
 
                                     background: rgba(210, 205, 205, 0.626);
                                     border-radius: 1rem;
