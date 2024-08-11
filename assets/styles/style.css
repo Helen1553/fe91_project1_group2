@@ -1140,7 +1140,6 @@
                 grid-area: 2/3/3/4;
             }
 
-            /*вставить бургер меню!! в grid-area: 2/4/3/5;*/
             .burger-menu {
                 display: flex;
                 flex-direction: column;
@@ -1149,7 +1148,7 @@
                 height: 30px;
                 cursor: pointer;
                 position: absolute;
-                top: 10px;
+                top: 27px;
                 right: 20px; /* Перемещаем бургер-меню на правую сторону */
             }
 
@@ -1164,12 +1163,14 @@
                 position: absolute;
                 top: 50px;
                 right: 0;
+
                 background-color: white;
                 flex-direction: column;
-                width: 100%;
-                height: 100%;
+                width: fit-content;
+                height: fit-content;
                 text-align: right;
                 gap: 1rem;
+                border-radius: 5%;
             }
 
             #menu-toggle:checked ~ .nav_links {
@@ -1210,7 +1211,7 @@
                         .form_dream-place {
                             display: flex;
                             flex-direction: column;
-                            align-items: center;
+                            align-items: start;
                             margin-top: 3rem;
 
                             width: 20rem;
@@ -1225,6 +1226,10 @@
                                     height: 80%;
                                 }
                             }
+                        }
+
+                        .find-property{
+                            margin-left: 17px;
                         }
                     }
                     .grid-item-block1-stars-down {
@@ -1532,7 +1537,7 @@
                         width: 2rem;
                         height: 2rem;
 
-                        margin-top: 5.8rem;
+                        margin-top: 6.1rem;
                     }
 
                     .burger-menu .line {
@@ -1550,12 +1555,13 @@
 
                         position: absolute;
                         top: 50px;
-                        width: 40%;
+                        right: 0;
+                        width: fit-content;
                         gap: 2rem;
                         height: fit-content;
 
                         background-color: #fff;
-                        border-radius: 10%;
+                        border-radius: 5%;
                         color: #000000;
                     }
 
@@ -1583,31 +1589,61 @@
                         grid-area: 3/2/4/5;
                         display: flex;
                         justify-content: center;
-                        align-content: end;
+                        align-content: center;
                         flex-wrap: wrap;
+                        gap: 4rem;
 
                         .main-block1_text-title {
                             font-size: 3.5rem;
                             font-weight: 500;
                             line-height: 4.2rem;
+                            text-align: center;
+                            padding: 10px;
 
                             color: #2c2b2b;
-                        }
-                        .search-form {
-                            position: relative;
-                            display: inline-block;
+
+                            background: rgba(220, 216, 216, 0.69);
+                            border-left: 3px solid #cf6f49;
+                            border-right: 3px solid #cf6f49;
                         }
 
+                        .form_dream-place{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 2rem;
+
+                            width: 20rem;
+                            height: 12rem;
+
+                            .search-form {
+                                width: 100%;
+                                height: 30%; 
+                                
+                                input{
+                                    width: 90%;
+                                    height: 90%;
+
+                                    border: solid #d1d2cb;
+                                    border-radius: 2%;
+                                }
+                            }
+                        }
                         .find-property {
+                            width: 150px;
+                            height: 70px;
+                            margin-left: 5rem;
+
                             background-color: #cf6f49;
                             color: white;
-                            border: 0.0625rem solid #cf6f49;
-                            padding: 0.3125rem 0.625rem;
-                            border-radius: 0.375rem;
+                            border: 1px solid #cf6f49;
+                            
+                            border-radius: 6px;
+                            font-size: larger;
                         }
 
-                        .search-f {
-                            padding-left: 1.5rem;
+                        .find-property:hover {
+                            background-color: rgba(220, 216, 216, 0.69);
+                            border: 2px solid #cf6f49;
                         }
                     }
                 }
@@ -1707,10 +1743,18 @@
                                 }
 
                                 .grid-item_main-block2-The-best-title2 {
-                                    display: inline-flex;
+                                    display: flex;
+                                    justify-content: center;
                                     text-align: center;
+
+                                    width: 23rem;
+
                                     font-size: 2.5rem;
                                     font-weight: bold;
+
+                                    background: rgba(220, 216, 216, 0.69);
+                                    border-left: 1px solid #000000;
+                                    border-right: 1px solid #000000;
                                 }
 
                                 .grid-item_main-block2-The-best-desc {
@@ -1764,10 +1808,18 @@
                                 }
 
                                 .grid-item_main-block2-Fast-forward-process-title {
-                                    display: inline-flex;
+                                    display: flex;
                                     text-align: center;
+
+                                    width: 23rem;
+                                    margin-top: 4rem;
+
                                     font-size: 2.5rem;
                                     font-weight: bold;
+
+                                    background: rgba(220, 216, 216, 0.69);
+                                    border-left: 1px solid #000000;
+                                    border-right: 1px solid #000000;
                                 }
 
                                 .grid-item_main-block2-Fast-forward-process-desc {
@@ -1947,7 +1999,7 @@
             }
             .logo {
                 .logo_text {
-                    font-size: 2rem;
+                    font-size: 2.6rem;
 
                     padding-top: 0.6rem;
                 }
