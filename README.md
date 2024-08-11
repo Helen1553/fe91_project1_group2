@@ -4,6 +4,21 @@
 ### и реализован на базе технологий `html5`, `css3` и фреймворка `bootstrap5`
 ![image](https://tajuso.com/wp-content/uploads/2018/03/udemy3-004.png)
 
+### Сайт адаптирован под разные виды устройств (desktop, tablet, mobile):
+
+* Desktop 
+![image](./assets/readme/realco_1.png)
+![image](./assets/readme/realco_2.png)
+![image](./assets/readme/realco_3.png)
+![image](./assets/readme/realco_4.png)
+![image](./assets/readme/realco_5.png)
+
+* Mobile
+![image](./assets/readme/realco_adaptive.png)
+![image](./assets/readme/realco_adaptive2.png)
+![image](./assets/readme/realco_adaptive3.png)
+
+
 
 #### <u>**Памятка по работе с GIT**</u>
 * <i>Клонирование репозитория:</i>
