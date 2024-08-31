@@ -16,6 +16,8 @@
 
         <link rel="stylesheet" href="./assets/styles/normalize.css">
         <link rel="stylesheet" href="./assets/styles/style.css">
+        <link rel="stylesheet" href="./assets/styles/media-tablet.css">
+        <link rel="stylesheet" href="./assets/styles/media-mobile.css">
 
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -34,9 +36,9 @@
                     <div class="header_logo">
                         <div class="logo">
                             <img src="./assets/images/header/logo_orange.svg" alt="logo" />
-                            <h4 class="logo_text">
+                            <h1 class="logo_text-header">
                                 Realco
-                            </h4>
+                            </h1>
                         </div>
                     </div>
 
@@ -56,7 +58,7 @@
                                 <div class="nav-search">
                                     <img
                                         src="./assets/images/header/vector_search.svg"
-                                        alt="лупа"
+                                        alt="a button to search for information"
                                     />
                                     <a href="#Search">Search</a>
                                 </div>
@@ -69,7 +71,7 @@
                             <button class="cart">
                                 <img
                                     src="./assets/images/header/vector_shoppingbag.svg"
-                                    alt="корзина"
+                                    alt="the 'go to cart' button"
                                     />
                                         Cart
                             </button>
@@ -108,12 +110,13 @@
             <div class="grid-item_body-main">
                 <main class="grid-container_main">
 
-                    <div class="grid-item_main-block1">
+                    <section class="grid-item_main-block1">
                         <div class="main-block1_Find-house">
                             <img
                                 class="grid-item-block1-stars-up"
                                 src="./assets/images/main_block1_find_house/vector_stairs_up.svg"
                                 alt="stairs-up"
+                                aria-hidden="true"
                             />
 
                             <div class="main-block1-Find-house-part1" id="Home">
@@ -159,12 +162,13 @@
                                 class="grid-item-block1-stars-down"
                                 src="./assets/images/main_block1_find_house/vector_stairs_down.svg"
                                 alt="stairs-down"
+                                aria-hidden="true"
                             />
                             <div class="grid-item_main-block1-img"></div>
                         </div>
-                    </div>
+                    </section>
 
-                    <div class="grid-item_main-block2">
+                    <section class="grid-item_main-block2">
                         <div class="grid-container_main-block2_Home">
                             <div class="grid-item_main-block2-How-it-works">
                                 <div class="grid-item_main-block2-How-it-works-logoipsum">
@@ -177,27 +181,32 @@
                                     <div>
                                         <img
                                             src="./assets/images/main_block2_how_it_works/logo_logoipsum1.png"
-                                            alt="logo"
+                                            alt="spoonsor's logo 1"
+                                            aria-hidden="true"
                                             class="grid-item_main-block2-How-it-works-logoipsum-image"
                                         />
                                         <img
                                             src="./assets/images/main_block2_how_it_works/logo_logoipsum2.png"
-                                            alt="logo"
+                                            alt="spoonsor's logo 2"
+                                            aria-hidden="true"
                                             class="grid-item_main-block2-How-it-works-logoipsum-image"
                                         />
                                         <img
                                             src="./assets/images/main_block2_how_it_works/logo_logoipsum3.png"
-                                            alt="logo"
+                                            alt="spoonsor's logo 3"
+                                            aria-hidden="true"
                                             class="grid-item_main-block2-How-it-works-logoipsum-image"
                                         />
                                         <img
                                             src="./assets/images/main_block2_how_it_works/logo_logoipsum4.png"
-                                            alt="logo"
+                                            alt="spoonsor's logo 4"
+                                            aria-hidden="true"
                                             class="grid-item_main-block2-How-it-works-logoipsum-image"
                                         />
                                         <img
                                             src="./assets/images/main_block2_how_it_works/logo_logoipsum5.png"
-                                            alt="logo"
+                                            alt="spoonsor's logo 5"
+                                            aria-hidden="true"
                                             class="grid-item_main-block2-How-it-works-logoipsum-image"
                                         />
                                     </div>
@@ -219,7 +228,7 @@
                                     <div class="grid-item_main-block2-How-it-works-section">
                                         <img
                                             src="./assets/images/main_block2_how_it_works/frame-house.png"
-                                            alt="house"
+                                            alt="the first stage of the deal"
                                         />
                                         <p class="grid-item_main-block2-How-it-works-section-text">
                                             Find property
@@ -232,13 +241,14 @@
                                         <img
                                             src="./assets/images/main_block2_how_it_works/vector_arrow.png"
                                             alt="arrow"
+                                            aria-hidden="true"
                                             class="grid-item_main-block2-How-it-works-section-arrow"
                                         />
                                     </div>
                                     <div class="grid-item_main-block2-How-it-works-section">
                                         <img
                                             src="./assets/images/main_block2_how_it_works/frame_list.png"
-                                            alt="list"
+                                            alt="the second stage of the deal"
                                         />
                                         <p class="grid-item_main-block2-How-it-works-section-text">
                                             Make a deal
@@ -251,13 +261,14 @@
                                         <img
                                             src="./assets/images/main_block2_how_it_works/vector_arrow.png"
                                             alt="arrow"
+                                            aria-hidden="true"
                                             class="grid-item_main-block2-How-it-works-section-arrow"
                                         />
                                     </div>
                                     <div class="grid-item_main-block2-How-it-works-section">
                                         <img
                                             src="./assets/images/main_block2_how_it_works/frame_key.png"
-                                            alt="key"
+                                            alt="the third stage of the deal"
                                         />
                                         <p class="grid-item_main-block2-How-it-works-section-text">
                                             Get your keys
@@ -344,6 +355,7 @@
                                             <img
                                                 src="./assets/images/main_block4_fast_forward_process/frame_wallet.png"
                                                 alt="wallet"
+                                                aria-hidden="true"
                                                 class="grid-item_main-block2-Fast-forward-process-image2"
                                             />
                                             <p class="grid-item_main-block2-Fast-forward-process-text">
@@ -361,6 +373,7 @@
                                             <img
                                                 src="./assets/images/main_block4_fast_forward_process/frame_folder.png"
                                                 alt="folder"
+                                                aria-hidden="true"
                                                 class="grid-item_main-block2-Fast-forward-process-image2"
                                             />
                                             <p class="grid-item_main-block2-Fast-forward-process-text">
@@ -392,14 +405,15 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </section>
 
-                    <div class="grid-item_main-block3" id="Properties">
+                    <section class="grid-item_main-block3" id="Properties">
                         <div class="grid-container_main-block3_Houses">
                             <div class="grid-item_main-block3-stairs_right">
                                 <img
                                 src="./assets/images/main_block5_houses_in_your_fav_area/vector_stairs_up.svg"
                                 alt="stairs"
+                                aria-hidden="true"
                                 />
                             </div>
 
@@ -427,14 +441,14 @@
                                                 <h5 class="card-title fw-bold">
                                                     Cozy studio in Los Angeles
                                                 </h5>
-                                                <h6 class="fw-bold">
+                                                <p class="fw-bold">
                                                     $ 1,200.00 USD
-                                                </h6>
+                                                </p>
                                             </div>
                                             <div class="d-flex gap-3">
                                                 <img
                                                     src="./assets/images/main_block5_houses_in_your_fav_area/vector_place.svg"
-                                                    alt="an image of place-vector"
+                                                    alt="location"
                                                 />
                                                 <p class="card-text">
                                                     2263 Southlea, Los Angeles
@@ -444,21 +458,21 @@
                                                 <div class="d-flex gap-2">
                                                     <img
                                                         src="./assets/images/main_block5_houses_in_your_fav_area/vector_bathtub.svg"
-                                                        alt="an image of bathtub-vector"
+                                                        alt="number of bathrooms"
                                                     />
                                                     <p class="card-text">2</p>
                                                 </div>
                                                 <div class="d-flex gap-2">
                                                     <img
                                                         src="./assets/images/main_block5_houses_in_your_fav_area/vector_bed.svg"
-                                                        alt="an image of bed-vector"
+                                                        alt="number of beds"
                                                     />
                                                     <p class="card-text">2</p>
                                                 </div>
                                                 <div class="d-flex gap-2">
                                                     <img
                                                         src="./assets/images/main_block5_houses_in_your_fav_area/vector_square_foot.svg"
-                                                        alt="an image of square-foot-vector"
+                                                        alt="square footage of the house"
                                                     />
                                                     <p class="card-text">
                                                         840 sqft
@@ -486,14 +500,14 @@
                                                 <h5 class="card-title fw-bold">
                                                     Tiny home in San Diego
                                                 </h5>
-                                                <h6 class="fw-bold">
+                                                <p class="fw-bold">
                                                     $ 740,000.00 USD
-                                                </h6>
+                                                </p>
                                             </div>
                                             <div class="d-flex gap-3">
                                                 <img
                                                     src="./assets/images/main_block5_houses_in_your_fav_area/vector_place.svg"
-                                                    alt="an image of place-vector"
+                                                    alt="location"
                                                 />
                                                 <p class="card-text">
                                                     2569 El Segundo, San Diego
@@ -503,21 +517,21 @@
                                                 <div class="d-flex gap-2">
                                                     <img
                                                         src="./assets/images/main_block5_houses_in_your_fav_area/vector_bathtub.svg"
-                                                        alt="an image of bathtub-vector"
+                                                        alt="number of bathrooms"
                                                     />
                                                     <p class="card-text">1</p>
                                                 </div>
                                                 <div class="d-flex gap-2">
                                                     <img
                                                         src="./assets/images/main_block5_houses_in_your_fav_area/vector_bed.svg"
-                                                        alt="an image of bed-vector"
+                                                        alt="number of beds"
                                                     />
                                                     <p class="card-text">2</p>
                                                 </div>
                                                 <div class="d-flex gap-2">
                                                     <img
                                                         src="./assets/images/main_block5_houses_in_your_fav_area/vector_square_foot.svg"
-                                                        alt="an image of square-foot-vector"
+                                                        alt="square footage of the house"
                                                     />
                                                     <p class="card-text">
                                                         400 sqft
@@ -545,14 +559,14 @@
                                                 <h5 class="card-title fw-bold">
                                                     Crown house in New York
                                                 </h5>
-                                                <h6 class="fw-bold">
+                                                <p class="fw-bold">
                                                     $ 980,000.00 USD
-                                                </h6>
+                                                </p>
                                             </div>
                                             <div class="d-flex gap-3">
                                                 <img
                                                 src="./assets/images/main_block5_houses_in_your_fav_area/vector_place.svg"
-                                                alt="an image of place-vector"
+                                                alt="location"
                                                 />
                                                 <p class="card-text">
                                                 4489 Smity Fielda, New York
@@ -562,21 +576,21 @@
                                                 <div class="d-flex gap-2">
                                                     <img
                                                         src="./assets/images/main_block5_houses_in_your_fav_area/vector_bathtub.svg"
-                                                        alt="an image of bathtub-vector"
+                                                        alt="number of bathrooms"
                                                     />
                                                     <p class="card-text">2</p>
                                                 </div>
                                                 <div class="d-flex gap-2">
                                                     <img
                                                         src="./assets/images/main_block5_houses_in_your_fav_area/vector_bed.svg"
-                                                        alt="an image of bed-vector"
+                                                        alt="number of beds"
                                                     />
                                                     <p class="card-text">4</p>
                                                 </div>
                                                 <div class="d-flex gap-2">
                                                     <img
                                                         src="./assets/images/main_block5_houses_in_your_fav_area/vector_square_foot.svg"
-                                                        alt="an image of square-foot-vector"
+                                                        alt="square footage of the house"
                                                     />
                                                     <p class="card-text">
                                                         3200 sqft
@@ -604,14 +618,14 @@
                                                 <h5 class="card-title fw-bold">
                                                     Family house in Los Angeles
                                                 </h5>
-                                                <h6 class="fw-bold">
+                                                <p class="fw-bold">
                                                     $ 4,200.00 USD
-                                                </h6>
+                                                </p>
                                             </div>
                                             <div class="d-flex gap-3">
                                                 <img
                                                     src="./assets/images/main_block5_houses_in_your_fav_area/vector_place.svg"
-                                                    alt="an image of place-vector"
+                                                    alt="location"
                                                 />
                                                 <p class="card-text">
                                                     2263 Southlea, Los Angeles
@@ -621,21 +635,21 @@
                                                 <div class="d-flex gap-2">
                                                     <img
                                                         src="./assets/images/main_block5_houses_in_your_fav_area/vector_bathtub.svg"
-                                                        alt="an image of bathtub-vector"
+                                                        alt="number of bathrooms"
                                                     />
                                                     <p class="card-text">2</p>
                                                 </div>
                                                 <div class="d-flex gap-2">
                                                     <img
                                                         src="./assets/images/main_block5_houses_in_your_fav_area/vector_bed.svg"
-                                                        alt="an image of bed-vector"
+                                                        alt="number of beds"
                                                     />
                                                     <p class="card-text">3</p>
                                                 </div>
                                                 <div class="d-flex gap-2">
                                                     <img
                                                         src="./assets/images/main_block5_houses_in_your_fav_area/vector_square_foot.svg"
-                                                        alt="an image of square-foot-vector"
+                                                        alt="square footage of the house"
                                                     />
                                                     <p class="card-text">
                                                         1400 sqft
@@ -663,14 +677,14 @@
                                                 <h5 class="card-title fw-bold">
                                                     Studio in Las Vegas
                                                 </h5>
-                                                <h6 class="fw-bold">
+                                                <p class="fw-bold">
                                                     $ 820,000.00 USD
-                                                </h6>
+                                                </p>
                                             </div>
                                             <div class="d-flex gap-3">
                                                 <img
                                                     src="./assets/images/main_block5_houses_in_your_fav_area/vector_place.svg"
-                                                    alt="an image of place-vector"
+                                                    alt="location"
                                                     />
                                                     <p class="card-text">
                                                         2569 Halls Corner, Las Vegas
@@ -680,21 +694,21 @@
                                                 <div class="d-flex gap-2">
                                                     <img
                                                         src="./assets/images/main_block5_houses_in_your_fav_area/vector_bathtub.svg"
-                                                        alt="an image of bathtub-vector"
+                                                        alt="number of bathrooms"
                                                     />
                                                     <p class="card-text">2</p>
                                                 </div>
                                                 <div class="d-flex gap-2">
                                                     <img
                                                         src="./assets/images/main_block5_houses_in_your_fav_area/vector_bed.svg"
-                                                        alt="an image of bed-vector"
+                                                        alt="number of beds"
                                                     />
                                                     <p class="card-text">3</p>
                                                 </div>
                                                 <div class="d-flex gap-2">
                                                     <img
                                                         src="./assets/images/main_block5_houses_in_your_fav_area/vector_square_foot.svg"
-                                                        alt="an image of square-foot-vector"
+                                                        alt="square footage of the house"
                                                     />
                                                     <p class="card-text">
                                                         2400 sqft
@@ -722,14 +736,14 @@
                                                 <h5 class="card-title fw-bold">
                                                     San Diego story
                                                 </h5>
-                                                <h6 class="fw-bold">
+                                                <p class="fw-bold">
                                                     $ 3,700.00 USD
-                                                </h6>
+                                                </p>
                                             </div>
                                             <div class="d-flex gap-3">
                                                 <img
                                                     src="./assets/images/main_block5_houses_in_your_fav_area/vector_place.svg"
-                                                    alt="an image of place-vector"
+                                                    alt="location"
                                                     />
                                                     <p class="card-text">
                                                         2569 El Segundo, San Diego
@@ -739,21 +753,21 @@
                                                 <div class="d-flex gap-2">
                                                     <img
                                                         src="./assets/images/main_block5_houses_in_your_fav_area/vector_bathtub.svg"
-                                                        alt="an image of bathtub-vector"
+                                                        alt="number of bathrooms"
                                                     />
                                                     <p class="card-text">1</p>
                                                 </div>
                                                 <div class="d-flex gap-2">
                                                     <img
                                                         src="./assets/images/main_block5_houses_in_your_fav_area/vector_bed.svg"
-                                                        alt="an image of bed-vector"
+                                                        alt="number of beds"
                                                     />
                                                     <p class="card-text">2</p>
                                                 </div>
                                                 <div class="d-flex gap-2">
                                                     <img
                                                         src="./assets/images/main_block5_houses_in_your_fav_area/vector_square_foot.svg"
-                                                        alt="an image of square-foot-vector"
+                                                        alt="square footage of the house"
                                                     />
                                                     <p class="card-text">
                                                         650 sqft
@@ -1080,12 +1094,13 @@
                                 <img
                                 src="./assets/images/main_block5_houses_in_your_fav_area/vector_stairs_down.svg"
                                 alt="stairs down"
+                                aria-hidden="true"
                                 />
                             </div>
                         </div>
-                    </div>
+                    </section>
 
-                    <div class="grid-item_main-block4">
+                    <section class="grid-item_main-block4">
                         <div class="grid-container_main-block4_information-and-reviews">
                             <div class="grid-item_main-block4-Locations">
                                 <div class="flex-container_main-block4-Locations">
@@ -1211,6 +1226,7 @@
                                         <img
                                             src="./assets/images/main_block7_families_are/frame_family_svg.svg"
                                             alt="families icon"
+                                            aria-hidden="true"
                                         />
                                     </div>
                                     <div>
@@ -1358,9 +1374,9 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </section>
 
-                    <div class="grid-item_main-block5">
+                    <section class="grid-item_main-block5">
                         <div class="main-block5_Latest-posts">
                             <div class="main-block5_Latest-posts-subtitle">
                                 Blog
@@ -1384,7 +1400,7 @@
                                 <div class="main-block5_Latest-posts-section">
                                     <img
                                         src="./assets/images/main_block9_latest_posts/img_room_the9_best.png"
-                                        alt="room"
+                                        alt="an image of a first room"
                                         class="main-block5_Latest-posts-section-image"
                                     />
                                     <div class="main-block5_Latest-posts-section-wrap2">
@@ -1412,7 +1428,7 @@
                                 <div class="main-block5_Latest-posts-section">
                                     <img
                                         src="./assets/images/main_block9_latest_posts/img_room_how_to.png"
-                                        alt="room"
+                                        alt="an image of a second room"
                                         class="main-block5_Latest-posts-section-image"
                                     />
                                     <div class="main-block5_Latest-posts-section-wrap2">
@@ -1439,7 +1455,7 @@
                                 <div class="main-block5_Latest-posts-section">
                                     <img
                                         src="./assets/images/main_block9_latest_posts/img_room_renting_houses.png"
-                                        alt="room"
+                                        alt="an image of a third room"
                                         class="main-block5_Latest-posts-section-image"
                                     />
                                     <div class="main-block5_Latest-posts-section-wrap2">
@@ -1466,7 +1482,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </section>
                 </main>
             </div>
 

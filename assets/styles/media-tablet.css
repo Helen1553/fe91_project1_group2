@@ -1,0 +1,375 @@
+@media screen and /*(min-width: 900px) */(min-width: 768px) and (max-width: 1023px) {
+    .body {
+        max-height: 5902px;
+
+        .grid-container_header {
+            grid-template: 30% 70%/20% 30% 30% 20%;
+
+            .grid-item_sup-header {
+                grid-area: 1/1/2/5;
+            }
+
+            .header_logo {
+                grid-area: 2/2/3/3;
+            }
+
+            .nav {
+                position: relative;
+                grid-area: 2/4/3/5;
+            }
+
+            .buttons {
+                grid-area: 2/3/3/4;
+            }
+
+            .burger-menu {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                width: 30px;
+                height: 30px;
+                cursor: pointer;
+                position: absolute;
+                top: 27px;
+                right: 20px; /* Перемещаем бургер-меню на правую сторону */
+            }
+
+            .line {
+                width: 100%;
+                height: 3px;
+                background-color: #000;
+            }
+
+            .nav_links {
+                display: none;
+                position: absolute;
+                top: 50px;
+                right: 0;
+
+                background-color: white;
+                flex-direction: column;
+                width: fit-content;
+                height: fit-content;
+                text-align: right;
+                gap: 1rem;
+                border-radius: 5%;
+            }
+
+            #menu-toggle:checked ~ .nav_links {
+                display: flex;
+            }
+
+            .header-links {
+                margin: 10px 20px;
+            }
+
+            .header-links a {
+                text-decoration: none;
+                color: #000;
+                font-size: 18px;
+            }
+        }
+
+        .grid-container_body {
+            .grid-container_main {
+                grid-template: 13% 43% 30% 14%/100%;
+
+                .grid-item_main-block1 {
+                    grid-area: 1/1/2/2;
+
+                    .btn-dream-place_text {
+                        .btn-dream-place {
+                            display: none;
+                        }
+
+                        .main-block1_text-title {
+                            font-size: 3rem;
+                        }
+
+                        .main-block1_text {
+                            display: none;
+                        }
+
+                        .form_dream-place {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: start;
+                            margin-top: 3rem;
+
+                            width: 20rem;
+                            height: 30rem;
+
+                            .search-form {
+                                width: 100%;
+                                height: 50%;
+
+                                input {
+                                    width: 90%;
+                                    height: 80%;
+                                }
+                            }
+                        }
+
+                        .find-property{
+                            margin-left: 17px;
+                        }
+                    }
+                    .grid-item-block1-stars-down {
+                        display: none;
+                    }
+                }
+
+                .grid-item_main-block2 {
+                    grid-area: 2/1/3/2;
+
+                    .grid-item_main-block2-How-it-works-logoipsum {
+                        padding-top: 0vh;
+                    }
+
+                    .grid-item_main-block2-How-it-works-logoipsum-text {
+                        font-size: 1rem;
+                    }
+
+                    .grid-item_main-block2-How-it-works-title {
+                        font-size: 2.5rem;
+                        padding-top: 0vh;
+                    }
+
+                    .grid-item_main-block2-How-it-works-desc {
+                        font-size: 1rem;
+                    }
+
+                    .grid-item_main-block2-How-it-works-section {
+                        height: 250px;
+                        font-size: 0.8rem;
+                    }
+
+                    .grid-item_main-block2-How-it-works-section-text {
+                        font-size: 1.2rem;
+                        padding-top: 1vh;
+                    }
+
+                    .grid-item_main-block2-How-it-works-section-arrow {
+                        display: none;
+                    }
+
+                    .grid-item_main-block2-The-best-section {
+                        padding-top: 1.5vw;
+                    }
+
+                    .grid-item_main-block2-The-best-subtitle {
+                        font-size: 0.8rem;
+                    }
+
+                    .grid-item_main-block2-The-best-title {
+                        font-size: 4.5vw;
+                        padding-top: 2vh;
+                    }
+
+                    .grid-item_main-block2-The-best-title2 {
+                        display: none;
+                    }
+
+                    .grid-item_main-block2-The-best-desc {
+                        font-size: 1.5vw;
+                    }
+
+                    .grid-item_main-block2-The-best-button-active {
+                        width: 170px;
+                        height: 45px;
+                        box-shadow: 2px 2px 2px #e7e8e3;
+                        font-size: 0.8rem;
+                    }
+
+                    .grid-item_main-block2-The-best-button {
+                        height: 35px;
+                        font-size: 0.8rem;
+                    }
+
+                    .grid-item_main-block2-Fast-forward-process-section {
+                        padding-left: 2vw;
+                        padding-top: 1vh;
+                    }
+
+                    .grid-item_main-block2-Fast-forward-process-subtitle {
+                        font-size: 0.8rem;
+                    }
+
+                    .grid-item_main-block2-Fast-forward-process-title {
+                        font-size: 4.2vw;
+                        padding-top: 1.5vw;
+                    }
+
+                    .grid-item_main-block2-Fast-forward-process-desc {
+                        font-size: 1.5vw;
+                        padding-top: 1.5vw;
+                    }
+
+                    .grid-item_main-block2-Fast-forward-process-box-wrap {
+                        padding-top: 1.5vw;
+                    }
+
+                    .grid-item_main-block2-Fast-forward-process-box {
+                        width: 25vw;
+                    }
+
+                    .grid-item_main-block2-Fast-forward-process-image2 {
+                        display: none;
+                    }
+
+                    .grid-item_main-block2-Fast-forward-process-text {
+                        font-size: 1.5vw;
+                    }
+
+                    .grid-item_main-block2-Fast-forward-process-text2 {
+                        font-size: 1vw;
+                    }
+
+                    .grid-item_main-block2-Fast-forward-process-wrap {
+                        padding-top: 0vw;
+                    }
+
+                    .grid-item_main-block2-Fast-forward-process-button-active {
+                        width: 170px;
+                        height: 45px;
+                        box-shadow: 2px 2px 2px #e7e8e3;
+                        font-size: 0.8rem;
+                    }
+
+                    .grid-item_main-block2-Fast-forward-process-button {
+                        width: 130px;
+                        height: 35px;
+                        font-size: 0.8rem;
+                    }
+                }
+
+                .grid-item_main-block3 {
+                    grid-area: 3/1/4/2;
+
+                    .grid-container_main-block3_Houses {
+                        grid-template: 5% 6% 2% 24% 2% 24% 2% 24% 3% 3% 5%/12% 24% 13% 2% 13% 24% 12%;
+
+                        .grid-item_main-block3-stairs_right {
+                            grid-area: 1/7/2/8;
+                        }
+
+                        .grid-item_main-block3-properties {
+                            grid-area: 2/2/3/7;
+                        }
+
+                        .grid-item_main-block3-card1 {
+                            grid-area: 4/2/5/4;
+                        }
+
+                        .grid-item_main-block3-card2 {
+                            grid-area: 4/5/5/7;
+                        }
+
+                        .grid-item_main-block3-card3 {
+                            grid-area: 6/2/7/4;
+                        }
+
+                        .grid-item_main-block3-card4 {
+                            grid-area: 6/5/7/7;
+                        }
+
+                        .grid-item_main-block3-card5 {
+                            grid-area: 8/2/9/4;
+                        }
+
+                        .grid-item_main-block3-card6 {
+                            grid-area: 8/5/9/7;
+                        }
+
+                        .grid-item_main-block3-explore_properties {
+                            grid-area: 10/2/11/7;
+                        }
+
+                        .grid-item_main-block3-stairs_left {
+                            grid-area: 11/1/12/2;
+                        }
+                    }
+                }
+
+                .grid-item_main-block4 {
+                    grid-area: 4/1/5/2;
+
+                    .grid-container_main-block4_information-and-reviews {
+                        grid-template: 100%/5% 90% 5%;
+
+                        .grid-item_main-block4-Locations {
+                            grid-area: 1/2/2/3;
+
+                            .grid-item_main-block4-Locations_text {
+                                margin-bottom: 2.6rem;
+                            }
+
+                            .grid-item_main-block4-Locations-card {
+                                margin-bottom: 2rem;
+
+                                div {
+                                    width: 45%;
+                                }
+                            }
+
+                            .grid-item_main-block4-Locations-card_tittle {
+                                font-size: 1.5rem;
+                            }
+
+                            .grid-item_main-block4-Fast-Locations-form-button {
+                                width: 160px;
+                                font-size: 1.2rem;
+                            }
+                        }
+
+                        .grid-item_main-block4-Families {
+                            display: none;
+                        }
+
+                        .grid-item_main-block4-What {
+                            display: none;
+                        }
+                    }
+                }
+
+                .grid-item_main-block5 {
+                    display: none;
+                }
+            }
+            .grid-item_body-footer {
+                .footer {
+                    .footer-container {
+                        .footer-content {
+                            .footer-links-col {
+                                display: none;
+                            }
+                        }
+                        .footer-subscribe {
+                            margin: 0.9rem 3rem 0 0;
+
+                            .footer-subscribe-title {
+                                font-size: 1.5rem;
+                            }
+
+                            .footer-subscribe-text {
+                                font-size: 1.1rem;
+                            }
+                        }
+                    }
+                }
+                .sub-footer {
+                    .sub-footer__container {
+                        margin: 0 2rem;
+                    }
+                }
+            }
+            .logo {
+                .logo_text {
+                    font-size: 2rem;
+
+                    padding-top: 0.6rem;
+                }
+            }
+        }
+    }
+}

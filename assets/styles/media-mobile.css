@@ -1,0 +1,516 @@
+@media screen and (max-width: 767px) {
+    .body {
+        max-height: 4475px;
+
+        .grid-container_body {
+            grid-template: 25% 65% 10%/1fr;
+
+            .grid-item_body-header {
+                grid-area: 1/1/2/2;
+                background-color: #e7e8e3;
+
+                .grid-container_header {
+                    grid-template: 20% 30% 40% 10%/2% 20% 68% 8% 2%;
+                    height: 70%;
+
+                    background-image: url(../images/main_block1_find_house/img_right.png);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                    -o-background-size: cover;
+                    background-size: cover;
+                    box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.5);
+
+                    height: 100%;
+
+                    .grid-item_sup-header {
+                        display: none;
+                    }
+
+                    .header_logo {
+                        grid-area: 1/2/2/3;
+                    }
+
+                    .nav {
+                        grid-area: 1/4/2/5;
+                    }
+
+                    .burger-menu {
+                        display: flex;
+                        cursor: pointer;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        width: 2rem;
+                        height: 2rem;
+
+                        margin-top: 6.1rem;
+                    }
+
+                    .burger-menu .line {
+                        width: 100%;
+                        height: 3px;
+                        background-color: black;
+                        border-radius: 20%;
+                        transition: transform 0.3s ease, opacity 0.3s ease;
+                    }
+
+                    .nav_links {
+                        display: none;
+                        flex-direction: column;
+                        align-items: center;
+
+                        margin-right: 0;
+                        position: absolute;
+                        top: 50px;
+                        
+                        width: fit-content;
+                        gap: 2rem;
+                        height: fit-content;
+
+                        background-color: #fff;
+                        border-radius: 5%;
+                        color: #000000;
+                    }
+
+                    /* Отображение меню при активном чекбоксе */
+                    .menu-toggle:checked + .burger-menu + .nav_links {
+                        display: flex;
+                    }
+
+                    /* Анимация превращения бургер-меню в крестик */
+                    .menu-toggle:checked + .burger-menu .line1 {
+                        transform: rotate(45deg) translate(5px, 5px);
+                    }
+                    .menu-toggle:checked + .burger-menu .line2 {
+                        opacity: 0;
+                    }
+                    .menu-toggle:checked + .burger-menu .line3 {
+                        transform: rotate(-45deg) translate(5px, -5px);
+                    }
+
+                    .buttons {
+                        display: none;
+                    }
+
+                    .adaptive-mobile_header_buttons {
+                        grid-area: 3/2/4/5;
+                        display: flex;
+                        justify-content: center;
+                        align-content: center;
+                        flex-wrap: wrap;
+                        gap: 4rem;
+
+                        .main-block1_text-title {
+                            font-size: 3.5rem;
+                            font-weight: 500;
+                            line-height: 4.2rem;
+                            text-align: center;
+                            padding: 10px;
+
+                            color: #2c2b2b;
+
+                            background: rgba(220, 216, 216, 0.69);
+                            border-left: 3px solid #cf6f49;
+                            border-right: 3px solid #cf6f49;
+                        }
+
+                        .form_dream-place{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 2rem;
+
+                            width: 20rem;
+                            height: 12rem;
+
+                            .search-form {
+                                width: 100%;
+                                height: 30%; 
+                                
+                                input{
+                                    width: 90%;
+                                    height: 90%;
+
+                                    border: solid #d1d2cb;
+                                    border-radius: 2%;
+                                }
+                            }
+                        }
+                        .find-property {
+                            width: 150px;
+                            height: 70px;
+                            margin-left: 5rem;
+
+                            background-color: #cf6f49;
+                            color: white;
+                            border: 1px solid #cf6f49;
+                            
+                            border-radius: 6px;
+                            font-size: larger;
+                        }
+
+                        .find-property:hover {
+                            background-color: rgba(220, 216, 216, 0.69);
+                            border: 2px solid #cf6f49;
+                        }
+                    }
+                }
+            }
+
+            .grid-item_body-main {
+                .grid-container_main {
+                    grid-template: 75% 25%/100%;
+
+                    .grid-item_main-block1 {
+                        display: none;
+                    }
+
+                    .grid-item_main-block2 {
+                        grid-area: 1/1/2/2;
+
+                        .grid-container_main-block2_Home {
+                            grid-template: 26% 37% 37%/20% 60% 20%;
+
+                            .grid-item_main-block2-How-it-works {
+                                grid-area: 1/2/2/3;
+
+                                .grid-item_main-block2-How-it-works-logoipsum {
+                                    display: none;
+                                }
+
+                                .grid-item_main-block2-How-it-works-title {
+                                    font-size: 2rem;
+                                    padding-top: 7vh;
+                                }
+
+                                .grid-item_main-block2-How-it-works-desc {
+                                    display: none;
+                                }
+
+                                .grid-item_main-block2-How-it-works-wrap {
+                                    flex-direction: column;
+                                    align-items: center;
+                                    padding-top: 5vh;
+                                    gap: 2vh;
+                                }
+
+                                .grid-item_main-block2-How-it-works-section {
+                                    width: 100vw;
+                                    height: max-content;
+                                    border: 0px solid transparent;
+                                    border-radius: none;
+                                    gap: 2vw;
+
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                }
+
+                                .grid-item_main-block2-How-it-works-section-text {
+                                    font-size: 1.125rem;
+                                }
+
+                                .grid-item_main-block2-How-it-works-section-text2 {
+                                    display: none;
+                                }
+
+                                .grid-item_main-block2-How-it-works-section-arrow {
+                                    display: inline;
+                                }
+                            }
+
+                            .grid-item_main-block2-The-best {
+                                grid-area: 2/1/3/4;
+
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+
+                                background-image: url(../images/main_block3_the_best_houses/img_room.png);
+                                box-shadow: inset 0 0 0 1000px
+                                    rgba(255, 255, 255, 0.5);
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                background-size: cover;
+                                -o-background-size: cover;
+
+                                .grid-item_main-block2-The-best-image {
+                                    display: none;
+                                }
+
+                                .grid-item_main-block2-The-best-section {
+                                    padding-top: 20vh;
+                                }
+
+                                .grid-item_main-block2-The-best-subtitle {
+                                    display: none;
+                                }
+
+                                .grid-item_main-block2-The-best-title {
+                                    display: none;
+                                }
+
+                                .grid-item_main-block2-The-best-title2 {
+                                    display: flex;
+                                    justify-content: center;
+                                    text-align: center;
+
+                                    width: 23rem;
+
+                                    font-size: 2.5rem;
+                                    font-weight: bold;
+
+                                    background: rgba(220, 216, 216, 0.69);
+                                    border-left: 1px solid #000000;
+                                    border-right: 1px solid #000000;
+                                }
+
+                                .grid-item_main-block2-The-best-desc {
+                                    display: none;
+                                }
+
+                                .grid-item_main-block2-The-best-wrap {
+                                    margin-top: 60vh;
+                                }
+
+                                .grid-item_main-block2-The-best-form {
+                                    display: flex;
+                                    justify-content: center;
+                                    padding-right: 0vw;
+                                }
+
+                                .grid-item_main-block2-The-best-button-active {
+                                    background-color: #ffffff;
+                                    font-weight: bold;
+                                }
+
+                                .grid-item_main-block2-The-best-button {
+                                    width: 192px;
+                                    font-weight: bold;
+                                }
+                            }
+
+                            .grid-item_main-block2-Fast-forward-process {
+                                grid-area: 3/1/4/4;
+
+                                display: flex;
+                                justify-content: flex-start;
+                                flex-direction: column;
+                                align-items: center;
+                                padding-top: 10vh;
+
+                                background-image: url(../images/main_block4_fast_forward_process/img_room.png);
+                                box-shadow: inset 0 0 0 1000px
+                                    rgba(255, 255, 255, 0.5);
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                background-size: cover;
+                                -o-background-size: cover;
+
+                                .grid-item_main-block2-Fast-forward-process-image {
+                                    display: none;
+                                }
+
+                                .grid-item_main-block2-Fast-forward-process-subtitle {
+                                    display: none;
+                                }
+
+                                .grid-item_main-block2-Fast-forward-process-title {
+                                    display: flex;
+                                    text-align: center;
+
+                                    width: 23rem;
+                                    margin-top: 4rem;
+
+                                    font-size: 2.5rem;
+                                    font-weight: bold;
+
+                                    background: rgba(220, 216, 216, 0.69);
+                                    border-left: 1px solid #000000;
+                                    border-right: 1px solid #000000;
+                                }
+
+                                .grid-item_main-block2-Fast-forward-process-desc {
+                                    display: none;
+                                }
+
+                                .grid-item_main-block2-Fast-forward-process-wrap {
+                                    margin-top: 60vh;
+                                }
+
+                                .grid-item_main-block2-Fast-forward-process-box {
+                                    display: none;
+                                }
+
+                                .grid-item_main-block2-Fast-forward-process-form {
+                                    display: flex;
+                                    justify-content: center;
+                                    padding-right: 0vw;
+                                }
+
+                                .grid-item_main-block2-Fast-forward-process-button-active {
+                                    background-color: #ffffff;
+                                    font-weight: bold;
+                                }
+
+                                .grid-item_main-block2-Fast-forward-process-button {
+                                    width: 192px;
+                                    font-weight: bold;
+                                }
+                            }
+                        }
+                    }
+
+                    .grid-item_main-block3 {
+                        grid-area: 2/1/3/2;
+
+                        .grid-container_main-block3_Houses {
+                            grid-template: 15% 8% 16% 47% 5% 15%/6% 3% 82% 3% 6%;
+
+                            .grid-item_main-block3-stairs_right {
+                                grid-area: 1/4/2/6;
+                            }
+
+                            .grid-item_main-block3-properties {
+                                grid-area: 2/2/3/5;
+
+                                .flex-container_main-block3_properties {
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                    align-items: center;
+
+                                    .link_properties {
+                                        background-color: #d1d2cb;
+                                        border: solid #d1d2cb;
+                                        border-radius: 2rem;
+                                        padding: 0.4rem 0.8rem;
+                                        text-decoration: none;
+                                        color: #2a2c1f;
+                                    }
+
+                                    .text-title {
+                                        font-size: 2.8rem;
+                                        font-weight: 700;
+                                        line-height: 4rem;
+                                        color: #2a2c1f;
+                                    }
+                                }
+                            }
+
+                            .grid-item_main-block3-card1 {
+                                display: none;
+                            }
+
+                            .grid-item_main-block3-card2 {
+                                display: none;
+                            }
+
+                            .grid-item_main-block3-card3 {
+                                display: none;
+                            }
+
+                            .grid-item_main-block3-card4 {
+                                display: none;
+                            }
+
+                            .grid-item_main-block3-card5 {
+                                display: none;
+                            }
+
+                            .grid-item_main-block3-card6 {
+                                display: none;
+                            }
+
+                            .grid-item_main-block3-explore_properties {
+                                grid-area: 5/3/6/4;
+
+                                margin-top: 1rem;
+                            }
+
+                            .grid-item_main-block3-stairs_left {
+                                grid-area: 6/1/7/3;
+                                display: none;
+                            }
+
+                            .slider {
+                                display: flex;
+                                grid-area: 4/3/5/4;
+
+                                cursor: pointer;
+
+                                .carousel-caption {
+                                    color: #ffffff;
+                                    text-shadow: 10px 10px 10px
+                                        rgb(0, 0, 0, 0.9);
+
+                                    background: rgba(210, 205, 205, 0.626);
+                                    border-radius: 1rem;
+                                    margin-bottom: 0.8rem;
+                                }
+                            }
+                        }
+                    }
+
+                    .grid-item_main-block4 {
+                        display: none;
+
+                        .grid-container_main-block4_information-and-reviews {
+                            grid-template: 100%/5% 90% 5%;
+
+                            .grid-item_main-block4-Locations {
+                                grid-area: 1/2/2/3;
+                            }
+
+                            .grid-item_main-block4-Families {
+                                display: none;
+                            }
+
+                            .grid-item_main-block4-What {
+                                display: none;
+                            }
+                        }
+                    }
+
+                    .grid-item_main-block5 {
+                        display: none;
+                    }
+                }
+            }
+
+            .grid-item_body-footer {
+                .footer {
+                    .footer-container {
+                        .footer-content {
+                            .footer-links-col {
+                                display: none;
+                            }
+                        }
+                        .footer-subscribe {
+                            margin: 0.9rem 3rem 0 0;
+
+                            .footer-subscribe-title {
+                                font-size: 1.5rem;
+                            }
+
+                            .footer-subscribe-text {
+                                font-size: 1.1rem;
+                            }
+                        }
+                    }
+                }
+                .sub-footer {
+                    .sub-footer__container {
+                        margin: 0 2rem;
+                    }
+                }
+            }
+            .logo {
+                .logo_text {
+                    font-size: 2.6rem;
+
+                    padding-top: 0.6rem;
+                }
+            }
+        }
+    }
+}
